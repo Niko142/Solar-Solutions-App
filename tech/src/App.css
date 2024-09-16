@@ -1,0 +1,72 @@
+:root {
+  --dark: #000000;
+  --black: #131313;
+  --white: #ffffff;
+  --opacity-white: #ffffffb8;
+  --red: #ee0000;
+  --grey: #f4f4f4;
+  --raven: #3E3E3E;
+  --light-grey: #5c5c5c;
+  --super-grey: #787878;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src:
+    local("Roboto-Regular"),
+    url("../src/Roboto/Roboto-Regular.ttf") format('ttf'),
+}
+
+@font-face {
+  font-family: "Roboto-Light";
+  src:
+    local("Roboto-Light"),
+    url("../src/Roboto/Roboto-Light.ttf") format('ttf'),
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 85px;
+  color: var(--black);
+}
+
+h2 {
+  display: block;
+  font-size: 58px;
+  line-height: 41px;
+  color: var(--red);
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 24px;
+  max-width: 131px;
+  line-height: 31px;
+  color: var(--white);
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 29px;
+  color: var(--light-grey);
+}
+
+span {font-family: 'Roboto';}
+
+.App {max-width: 1440px; margin: 0 auto;}
+
+a, li > a {text-decoration: none;}
+
+li {list-style-type: none;}
+
+img {max-width: 100%; height: auto; pointer-events: none;}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+}

@@ -1,0 +1,17 @@
+.button_active, 
+.button_passive {
+    border: 0px solid transparent;
+    box-sizing: border-box;
+    border-radius: 40px;
+    font-size: 18px; line-height: 30px;
+    padding: 10px 30px;
+}
+
+.button_passive:hover {background-color: var(--grey);}
+
+.button_active {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.button_passive {background-color: var(--white);}

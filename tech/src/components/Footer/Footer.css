@@ -1,0 +1,129 @@
+footer {
+    background-color: var(--dark);
+    color: var(--opacity-white);
+}
+
+.footer_header > p {
+    margin: 0 auto; max-width: 965px;
+    display: block;
+    font-family: 'Roboto-Light';
+    font-size: 18px; line-height: 31px;
+    padding: 46px 0 44px 0;
+}
+
+.footer_header::after,
+.footer_end::before {
+    content: '';
+    position: absolute;
+    width: 1440px;
+    height: 1px;
+    background-color: var(--white);
+    opacity: 0.2;
+}
+
+.footer_content {
+    display: flex;
+    justify-content: center;
+    padding-top: 102px; padding-bottom: 70px;
+}
+
+.logo {margin-right: 41px;}
+.link {position: relative;; margin-left: 55px; margin-right: 41px;}
+.services {position: relative; margin-left: 52px; margin-right: 48px;}
+.contacts {position: relative; margin-left: 33px;}
+
+.logo > span, .logo > img {
+    display: block;
+    max-width: 313px;
+}
+
+.link::before,
+.contacts::before,
+.services::before {
+    content: '';
+    position: absolute;
+    background-color: var(--white);
+    opacity: 0.2;
+    width: 1px;
+    height: 426px;
+}
+
+.link::before {top: -88px; left: -55.5px;}
+.services::before {top: -88px; left: -51.5px;}
+.contacts::before { top: -88px; left: -33px;}
+
+.logo > span {font-size: 16px; line-height: 27px; margin-top: 30px; }
+
+.head {display: block; color: var(--white); margin-top: 43px;}
+
+.footer_end > span {
+    color: var(--white);
+    display: block;
+    text-align: center;
+    padding: 19px 0;
+    font-size: 16px; line-height: 24px;
+}
+
+.link > ul,
+.services > ul,
+.contacts > ul {
+    margin: 0;
+    margin-top: 9px;
+    display: flex;
+    padding-left: 0;
+    flex-direction: column;
+}
+
+.link > ul > li,
+.services > ul > li,
+.contacts > ul > li {
+    font-family: 'Roboto-Light';
+    font-size: 16px; line-height: 35px;
+}
+
+.link > ul > li > a,
+.services > ul > li > a,
+.contacts > ul > li > a {
+    text-transform: inherit;
+    color: var(--opacity-white);
+}
+
+.link > ul > li > a:hover,
+.services > ul > li > a:hover,
+.contacts > ul > li > a:hover {
+    color: var(--red);
+}
+
+#phone,
+#message {
+    position: relative;
+    display: flex;
+    margin-left: 15px;
+}
+
+#phone::before {
+    content: url('../Image/phones.svg');
+    flex-direction: row;
+    position: relative;
+    width: 21px; height: 21px;
+    top: 5px; left: -15px;
+}
+
+#message::before {
+    content: url('../Image/message.svg');
+    flex-direction: row;
+    position: relative;
+    width: 18.5px; height: 18.5px;
+    top: 5px; left: -15px;
+}
+
+.networks {max-height: 27px;}
+.networks > a {
+    display: inline-block; 
+    max-height: 27px;
+    column-gap: 10px;
+}
+
+.networks > a > img {
+    fill: aqua;
+}

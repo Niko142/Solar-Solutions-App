@@ -1,0 +1,22 @@
+.solution {display: grid;justify-content: center; margin-bottom: 117px;}
+
+.solution__wrapper {
+    position: relative;
+    border-radius: 10px;
+    width: 1282px;
+    height: 602px;
+    background: linear-gradient(to right, #000000 18%, transparent), url('../Image/Solution.svg') no-repeat center;
+}
+
+.solution_text {
+    position: absolute; margin: 0;
+    top: 152px; left: 66px;
+    max-width: 580px; max-height: 297px;
+    font-size: 70px;line-height: 76px; font-weight: bold;
+    color: #ffffff;
+}
+
+.solution_text span {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--red);
+}

@@ -1,0 +1,30 @@
+.choose_wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 30px; row-gap: 31px;
+}
+
+.choose_description {
+    display: block;
+    /* max-width: ; max-height: ; */
+}
+.choose {
+    border: 1px solid transparent; box-sizing: border-box;
+    padding: 111px 150px 110px 150px;
+    background-color: var(--grey);
+}
+
+.choose_block {
+    border: 1px solid transparent; border-radius: 10px;
+    box-sizing: border-box;
+    background-color: var(--white);   
+}
+
+.choose_text {
+    font-Family: 'Roboto';
+    font-size: 18px; line-height: 22px;
+    color: var(--raven);
+    margin: 0; margin-top: '13px';
+    max-width: '290px';
+}

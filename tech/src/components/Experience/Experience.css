@@ -1,0 +1,29 @@
+.experience {
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-bottom: 112px;
+}
+.experience_wrapper {
+    margin-top: 25px;
+    height: 432px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+
+}
+
+.block {position: relative;}
+
+.block_content {
+    position: absolute;
+    top: 25px;
+    left: 20px;
+}
+
+.text_block {
+    max-height: 88px; max-width: 215px;
+    display: block;
+    font-size: 16px; line-height: 22px;
+    margin-top: 18px;
+    color: var(--white);
+}
