@@ -6,6 +6,7 @@
     display: flex;
     padding: 44px 150px 70px 150px;
     column-gap: 67px;
+    margin-bottom: 95px;
 }
 
 .contact_image {

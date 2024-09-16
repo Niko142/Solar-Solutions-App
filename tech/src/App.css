@@ -24,7 +24,7 @@
     url("../src/Roboto/Roboto-Light.ttf") format('ttf'),
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   margin: 0;
   font-weight: bold;
 }
@@ -54,6 +54,12 @@ h4 {
   font-size: 24px;
   line-height: 29px;
   color: var(--light-grey);
+}
+
+h5 {
+  font-size: 20px;
+  line-height: 25px;
+  color: var(--red);
 }
 
 span {font-family: 'Roboto';}
