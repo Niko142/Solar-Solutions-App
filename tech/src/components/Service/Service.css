@@ -1,4 +1,5 @@
 .service_header {
+    margin-bottom: 42.5px;
     text-align: center;
 }
 
@@ -10,7 +11,24 @@
     line-height: 39px;
 }
 
-#solar {margin-bottom: 21px;}
+#solar {margin-bottom: 21px; margin-top: 25px;}
+#cable {margin-bottom: 18.5px; margin-top: 30.5px;}
+#deal {margin-bottom: 8px; margin-top: 23.5px;}
+#consultation {margin-bottom: 17px; margin-top: 30.5px;}
+
+#last {
+    /* Стоит запомнить данный подход */
+    /* Подобие area, но проще */
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+.service_block {
+    padding-left: 20px;
+    border-radius: 10px;
+    max-width: 360px;
+    background-color: var(--service);
+}
 
 .service_span {
     font-family: 'Roboto';
@@ -19,9 +37,16 @@
     max-height: 75px;
 }
 
+.service_image {
+    position: relative;
+    top: 37px;
+}
+
 .service_content {
+    max-width: 1140px; margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 446px 1fr;
-    grid-template-rows: 1fr 1fr;
-    /* grid-template-areas: ; */
+    column-gap: 34px; row-gap: 30px;
+    grid-template-columns: 360px 1fr 360px;
+    grid-template-rows: repeat(2, 252px);
+    margin-bottom: 101px;
 }

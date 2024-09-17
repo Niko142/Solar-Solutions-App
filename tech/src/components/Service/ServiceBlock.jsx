@@ -1,12 +1,16 @@
 import './Service.css';
 import Solar from '../Image/Solar_mask.svg';
+import Cable from '../Image/Cable_mask.svg';
+import Deal from '../Image/Deal_mask.svg';
+import Consultation from '../Image/Consultation_mask.svg';
+import Service from '../Image/Service.svg';
 
 export default function ServiceContent() {
 
-    const ServiceBlock = ({imageId, image, header, description }) => {
+    const ServiceBlock = ({imageId, image, blockId, header, description }) => {
         return (
-            <div className="service_block">
-                    <img id={imageId} src={image} alt="Logo" />
+            <div className="service_block" id={blockId}>
+                    <img style={{display: 'block'}} id={imageId} src={image} alt="Logo" />
                     <h4 id='ser_head'>{header}</h4>
                     <span className='service_span'>{description}</span>
             </div>
@@ -25,6 +29,28 @@ export default function ServiceContent() {
                     header={'Solar Solution'}
                     description={`Harness the power of the sun and embrace clean, 
                     renewable energy with our solar solutions.`}    
+                />
+                <div className="service_image">
+                    <img src={Service} alt="Service" />
+                </div>
+                <ServiceBlock 
+                    image={Deal} imageId={'deal'}
+                    header={'Deals and Promotions'}
+                    description={`We pride ourselves on securing great deals 
+                        and promotions for our customers.`}
+                />
+                <ServiceBlock 
+                    image={Cable} imageId={'cable'}
+                    header={'Cable Services'}
+                    description={`Stay connected with high-quality cable services 
+                        that deliver reliable and fast internet, television`}
+                />
+                <ServiceBlock 
+                    image={Consultation} imageId={'consultation'}
+                    blockId={'last'}
+                    header={'Consultation and Support'}
+                    description={`We understand that navigating the solar and 
+                        cable landscape can be overwhelming.`}
                 />
             </div>
         </section>
