@@ -5,3 +5,23 @@
 #h_serv {
     line-height: 67px;
 }
+
+#ser_head {
+    line-height: 39px;
+}
+
+#solar {margin-bottom: 21px;}
+
+.service_span {
+    font-family: 'Roboto';
+    font-size: 18px; line-height: 25px;
+    color: var(--super-grey);
+    max-height: 75px;
+}
+
+.service_content {
+    display: grid;
+    grid-template-columns: 1fr 446px 1fr;
+    grid-template-rows: 1fr 1fr;
+    /* grid-template-areas: ; */
+}
