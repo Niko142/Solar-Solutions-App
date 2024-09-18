@@ -2,7 +2,7 @@
 
 .solution__wrapper {
     position: relative;
-    border-radius: 10px;
+    border-radius: var(--rounding);
     width: 1282px;
     height: 602px;
     background: linear-gradient(to right, #000000 18%, transparent), url('../Image/Solution.svg') no-repeat center;

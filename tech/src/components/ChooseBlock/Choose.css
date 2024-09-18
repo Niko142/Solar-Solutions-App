@@ -16,7 +16,7 @@
 }
 
 .choose_block {
-    border: 1px solid transparent; border-radius: 10px;
+    border: 1px solid transparent; border-radius: var(--rounding);
     box-sizing: border-box;
     background-color: var(--white);   
 }

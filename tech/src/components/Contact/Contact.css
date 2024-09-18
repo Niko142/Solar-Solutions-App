@@ -25,7 +25,7 @@
 
 .img1,
 .img2 {
-    border-radius: 10px;
+    border-radius: var(--rounding);
 }
 
 #right {margin-right: 31px;}

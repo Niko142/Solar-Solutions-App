@@ -2,7 +2,7 @@
 .button_passive {
     border: 0px solid transparent;
     box-sizing: border-box;
-    border-radius: 40px;
+    border-radius: var(--button-border);
     font-size: 18px; line-height: 30px;
     padding: 10px 30px;
 }

@@ -25,7 +25,7 @@
 
 .service_block {
     padding-left: 20px;
-    border-radius: 10px;
+    border-radius: var(--rounding);
     max-width: 360px;
     background-color: var(--service);
 }
