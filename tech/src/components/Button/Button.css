@@ -5,6 +5,7 @@
     border-radius: var(--button-border);
     font-size: 18px; line-height: 30px;
     padding: 10px 30px;
+    white-space: nowrap;
 }
 
 .button_passive:hover {background-color: var(--grey);}

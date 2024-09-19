@@ -12,7 +12,10 @@
 
 }
 
-.block {position: relative;}
+.block {
+    position: relative;
+    border-radius: var(--rounding);
+}
 
 .block_content {
     position: absolute;
@@ -23,7 +26,7 @@
 .text_block {
     max-height: 88px; max-width: 215px;
     display: block;
-    font-size: 16px; line-height: 22px;
+    font-size: 16px; line-height: 1.375;
     margin-top: 18px;
     color: var(--white);
 }

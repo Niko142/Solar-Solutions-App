@@ -7,7 +7,7 @@ footer {
     margin: 0 auto; max-width: 965px;
     display: block;
     font-family: 'Roboto-Light';
-    font-size: 18px; line-height: 31px;
+    font-size: 18px; line-height: 1.722;
     padding: 46px 0 44px 0;
 }
 
@@ -52,7 +52,7 @@ footer {
 .services::before {top: -88px; left: -51.5px;}
 .contacts::before { top: -88px; left: -33px;}
 
-.logo > span {font-size: 16px; line-height: 27px; margin-top: 30px; }
+.logo > span {font-size: 16px; line-height: 1.6875; margin-top: 30px; }
 
 .head {display: block; color: var(--white); margin-top: 43px;}
 
@@ -61,7 +61,7 @@ footer {
     display: block;
     text-align: center;
     padding: 19px 0;
-    font-size: 16px; line-height: 24px;
+    font-size: 16px; line-height: 1.5;
 }
 
 .link > ul,
@@ -78,7 +78,7 @@ footer {
 .services > ul > li,
 .contacts > ul > li {
     font-family: 'Roboto-Light';
-    font-size: 16px; line-height: 35px;
+    font-size: 16px; line-height: 2.1875;
 }
 
 .link > ul > li > a,

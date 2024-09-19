@@ -1,7 +1,13 @@
-.solution {display: grid;justify-content: center; margin-bottom: 117px;}
+.solution {
+    border-radius: var(--rounding);
+    margin-bottom: 117px;
+    padding-inline: 76.4px;
+}
 
 .solution__wrapper {
+    /* Нужно убрать эти размеры */
     position: relative;
+    margin: 0 auto;
     border-radius: var(--rounding);
     width: 1282px;
     height: 602px;
@@ -12,7 +18,7 @@
     position: absolute; margin: 0;
     top: 152px; left: 66px;
     max-width: 580px; max-height: 297px;
-    font-size: 70px;line-height: 76px; font-weight: bold;
+    font-size: 70px; line-height: 1.08571; font-weight: bold;
     color: #ffffff;
 }
 
