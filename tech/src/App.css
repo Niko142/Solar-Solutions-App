@@ -14,6 +14,7 @@
 
   /* borders */
   --button-border: 40px;
+  --rad: 2px;
   --rounding: 10px;
 }
 
@@ -39,6 +40,11 @@
  *::after {
    box-sizing: border-box;
  }
+
+ body { 
+  min-width: 320px;
+  min-height: 480px;
+}
  
  /**
    Убираем внутренние отступы слева тегам списков,
@@ -92,6 +98,7 @@
    Упрощаем работу с изображениями
   */
  img {
+  -webkit-user-select: none;
    display: block;
    max-width: 100%;
  }

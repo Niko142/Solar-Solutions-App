@@ -5,7 +5,7 @@ export default function ExperienceBlock() {
 
     const ShowBlock = ({ header, desc, image }) => {
         return (
-            <div className="block" style={{backgroundImage: `linear-gradient(to bottom, var(--black) 0.1%, transparent), url(${image})`, backgroundRepeat: 'no-repeat'}}>
+            <div className="block" style={{backgroundImage: `linear-gradient(to bottom, var(--black) 0.1%, transparent), url(${image})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center'}}>
                 <div className='block_content'>
                     <h3>{header}</h3>
                     <span className="text_block">{desc}</span>

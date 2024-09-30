@@ -13,10 +13,10 @@ function App() {
       <Header />
       <Solution />
       <ExperienceBlock />
-      <ChooseBlock />
-      <ContactContent />
+      {/* <ChooseBlock /> */}
+      {/* <ContactContent />
       <ServiceContent />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }

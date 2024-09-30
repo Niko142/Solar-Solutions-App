@@ -8,7 +8,7 @@
     height: 432px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 30px;
+    gap: 30px;
 
 }
 
@@ -24,9 +24,25 @@
 }
 
 .text_block {
-    max-height: 88px; max-width: 215px;
+    max-height: 88px;
     display: block;
     font-size: 16px; line-height: 1.375;
     margin-top: 18px;
     color: var(--white);
+}
+
+@media screen and (max-width: 1000px) {
+    .block_content h3 {
+        font-size: 20px;
+    }
+    .block_content span {font-size: 14px;}
+
+    .block {max-height: 350px;}
+}
+
+@media screen and (max-width: 800px) {
+    .experience_wrapper {
+        padding-inline: 100px;
+        grid-template-columns: repeat(2, 263px);
+    }
 }

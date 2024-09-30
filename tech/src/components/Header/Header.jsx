@@ -1,13 +1,22 @@
 import './Header.css';
 import Logo from '../Image/Logo.svg';
+import { useEffect, useState } from 'react';
 export default function Header() {
+    const [active, setActive] = useState(false);
+    useEffect(()=> {
+        window.addEventListener('resize', (e) => {
+            const screenWidth = document.body.clientWidth;
+            if (screenWidth > 970) {setActive(false)}
+        })
+    }, [active]);
+    
     return(
         <header>
             <nav className="navbars">
-                <div className="header__logo">
-                    <img src={Logo} alt="Logo" onClick={() => window.location.reload()}/>
-                </div>
-                <ul className='nav_ul'>
+                
+                    <img src={Logo} alt="Logo"/>
+
+                <ul className={active ? 'nav_ul_active' : 'nav_ul'}>
                     <li><a href="/#">Home</a></li>
                     <li><a href="/#">About us</a></li>
                     <li><a href="/#">Solar Initiatives</a></li>
@@ -15,7 +24,13 @@ export default function Header() {
                     <li><a href="/#">Community</a></li>
                     <li><a href="/#">Aesthetics</a></li>
                 </ul>
+                <button className='nav-burger-button' onClick={() => setActive(!active)}>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </nav>
+            {console.log(active)}
         </header>
     )
 }

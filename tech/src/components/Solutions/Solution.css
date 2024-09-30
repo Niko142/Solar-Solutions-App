@@ -5,24 +5,61 @@
 }
 
 .solution__wrapper {
-    /* Нужно убрать эти размеры */
     position: relative;
     margin: 0 auto;
     border-radius: var(--rounding);
-    width: 1282px;
-    height: 602px;
-    background: linear-gradient(to right, #000000 18%, transparent), url('../Image/Solution.svg') no-repeat center;
 }
 
 .solution_text {
     position: absolute; margin: 0;
-    top: 152px; left: 66px;
+    top: 25%; left: 5%;
     max-width: 580px; max-height: 297px;
-    font-size: 70px; line-height: 1.08571; font-weight: bold;
-    color: #ffffff;
+    font-size: 70px; line-height: 1.08571;
+    color: #ffffff; font-weight: bold;
+    text-transform: uppercase;
 }
 
 .solution_text span {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: var(--red);
+}
+
+@media screen and (max-width: 1200px) {
+    .solution_text {
+        font-size: 60px;
+        max-width: 466px;
+        max-height: 255px;
+    }    
+}
+
+@media screen and (max-width: 1050px) {
+    .solution_text {
+        font-size: 45px;
+        max-width: 350px;
+        max-height: 193px;
+    }  
+}
+
+@media screen and (max-width: 850px) {
+    .solution_text {
+        font-size: 35px;
+        max-width: 272px;
+        max-height: 150px;
+    }  
+}
+
+@media screen and (max-width: 640px) {
+    .solution_text {
+        font-size: 25px;
+        max-width: 194px;
+        max-height: 107px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .solution_text {
+        font-size: 17px;
+        max-width: 132px;
+        max-height: 74px;
+    }
 }
