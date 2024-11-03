@@ -6,8 +6,10 @@
 .experience_wrapper {
     margin-top: 25px;
     height: 432px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr); */
     gap: 30px;
 
 }
@@ -18,14 +20,15 @@
 }
 
 .block_content {
-    position: absolute;
-    top: 25px;
-    left: 20px;
+    padding-top: 10%;
+    padding-left: 10%;
+    max-width: 262px;
 }
 
 .text_block {
     max-height: 88px;
     display: block;
+    font-weight: 400;
     font-size: 16px; line-height: 1.375;
     margin-top: 18px;
     color: var(--white);

@@ -19,17 +19,43 @@
 }
 
 @font-face {
-  font-family: "Roboto";
-  src:
-    local("Roboto-Regular"),
-    url("../src/Roboto/Roboto-Regular.ttf") format('ttf'),
+  font-family: "Poppins";
+  src: url("../src/Poppins/Poppins-Bold.woff2") format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: "Roboto-Light";
-  src:
-    local("Roboto-Light"),
-    url("../src/Roboto/Roboto-Light.ttf") format('ttf'),
+  font-family: "Poppins";
+  src: url("../src/Poppins/Poppins-Medium.woff2") format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../src/Poppins/Poppins-Regular.woff2") format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../src/Roboto/Roboto-Regular.woff2") format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src:url("../src/Roboto/Roboto-Light.woff2") format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 
 /**
@@ -151,13 +177,14 @@
  }
 
 h1, h2, h3, h4, h5 {
+  font-family: 'Poppins';
+  font-weight: 700;
   margin: 0;
-  font-weight: bold;
 }
 
 h1 {
-  font-size: 50px;
-  line-height: 1.7;
+  font-weight: 700;
+  font-size: 50px; line-height: 1.7;
   color: var(--black);
 }
 

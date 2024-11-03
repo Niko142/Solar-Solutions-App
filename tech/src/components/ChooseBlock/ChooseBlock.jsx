@@ -8,7 +8,7 @@ export default function ChooseBlock() {
             <div className="choose_block">
                 <h2>{number}</h2>
                 <h4>{header}</h4>
-                <p style={{color: 'var(--super-grey)', maxWidth: '300px'}}>{desc}</p>
+                <p style={{fontFamily: 'Roboto', color: 'var(--super-grey)', maxWidth: '300px', fontWeight: '400'}}>{desc}</p>
             </div>
         )
     }

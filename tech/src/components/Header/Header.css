@@ -5,12 +5,12 @@
     padding-inline: 86px 79px;
 }
 
-li, li > a {font-size: 18px; line-height: 1.5;}
+li, li > a {font-family: 'Poppins'; font-weight: 500; font-size: 18px; line-height: 1.5;}
 
 li > a {color: #ffffff; text-transform: uppercase;}
 li > a:hover {color: var(--red);}
 
-.nav_ul {column-gap: 40px; display: flex;}
+.nav_ul {column-gap: 47px; display: flex; max-width: 876px;}
 .nav_ul > li {white-space: nowrap;}
 
 .header__logo {flex-shrink: 0;}

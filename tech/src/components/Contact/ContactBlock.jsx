@@ -8,7 +8,7 @@ export default function ContactContent() {
         <section className="contact">
             <div className="contact_wrapper">
                 <div className="contact_description">
-                    <h1 style={{color: 'var(--white)', }}>Who We Are</h1>
+                    <h1 style={{color: 'var(--white)', paddingTop: '46px', marginBottom: '6px'}}>Who We Are</h1>
                     <p className='contact_text'> 
                         Welcome to our sales and marketing company, 
                         where we specialize in helping customers snag 

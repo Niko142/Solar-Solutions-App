@@ -28,7 +28,7 @@ export default function ExperienceBlock() {
 
     return(
         <section className="experience">
-            <h1>Our Expertise and Experience</h1>
+            <h1 style={{display: 'inline-block'}}>Our Expertise and Experience</h1>
             <div className="experience_wrapper">
                 {Experience}
             </div>

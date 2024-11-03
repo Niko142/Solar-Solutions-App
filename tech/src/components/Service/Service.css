@@ -34,6 +34,7 @@
 
 .service_span {
     font-family: 'Roboto';
+    font-weight: 400;
     font-size: 18px; line-height: 1.3889;
     color: var(--super-grey);
     max-height: 75px;

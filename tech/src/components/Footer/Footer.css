@@ -4,9 +4,10 @@ footer {
 }
 
 .footer_header > p {
-    margin: 0 auto; max-width: 965px;
+    margin: 0 auto; max-width: 1050px;
     display: block;
-    font-family: 'Roboto-Light';
+    font-family: 'Roboto';
+    font-weight: 300;
     font-size: 18px; line-height: 1.722;
     padding: 46px 0 44px 0;
 }
@@ -34,7 +35,7 @@ footer {
 
 .logo > span, .logo > img {
     display: block;
-    max-width: 313px;
+    max-width: 336px;
 }
 
 .link::before,
@@ -52,7 +53,12 @@ footer {
 .services::before {top: -88px; left: -51.5px;}
 .contacts::before { top: -88px; left: -33px;}
 
-.logo > span {font-size: 16px; line-height: 1.6875; margin-top: 30px; }
+.logo > span {
+    font-family: 'Roboto';
+    font-weight: 300; 
+    font-size: 16px; line-height: 1.6875; 
+    margin-top: 30px;
+}
 
 .head {display: block; color: var(--white); margin-top: 43px;}
 
@@ -77,7 +83,8 @@ footer {
 .link > ul > li,
 .services > ul > li,
 .contacts > ul > li {
-    font-family: 'Roboto-Light';
+    font-family: 'Roboto';
+    font-weight: 300;
     font-size: 16px; line-height: 2.1875;
 }
 

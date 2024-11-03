@@ -3,6 +3,7 @@
     border: 0px solid transparent;
     box-sizing: border-box;
     border-radius: var(--button-border);
+    font-family: "Poppins"; font-weight: 400;
     font-size: 18px; line-height: 30px;
     padding: 10px 30px;
     white-space: nowrap;
