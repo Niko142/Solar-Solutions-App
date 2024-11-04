@@ -1,16 +1,18 @@
 .service_header {
-    margin-bottom: 42.5px;
+    margin-bottom: 31.5px;
     text-align: center;
 }
 
 /* Настроить высоты */
 
 #h_serv {
-    line-height: 67px;
+    font-size: 50px;
+    margin-top: 10px;
+    line-height: 1.3858;
 }
 
 #ser_head {
-    line-height: 39px;
+    line-height: 1.625;
 }
 
 #solar {margin-bottom: 21px; margin-top: 25px;}
@@ -26,7 +28,7 @@
 }
 
 .service_block {
-    padding-left: 20px;
+    padding-inline: 20px;
     border-radius: var(--rounding);
     max-width: 360px;
     background-color: var(--service);
@@ -35,7 +37,7 @@
 .service_span {
     font-family: 'Roboto';
     font-weight: 400;
-    font-size: 18px; line-height: 1.3889;
+    font-size: 18px; line-height: 1.3888888888888888888888888888889;
     color: var(--super-grey);
     max-height: 75px;
 }

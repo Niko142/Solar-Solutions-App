@@ -53,7 +53,7 @@ header {
     .nav-burger-button {
         transform: translateX(40px);
     }
-    .nav_ul, .nav_ul_active {
+    /* .nav_ul, .nav_ul_active {
         overflow: hidden; z-index: 99;
         background-color: var(--red);
         position: absolute;
@@ -61,7 +61,7 @@ header {
         display: block;
         padding: 115px 30px 40px 30px;
         transition: transform 1.2s, opacity 1.2s;
-    }
+    } */
 
     .nav_ul {opacity: 0;}
 

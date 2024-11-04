@@ -12,7 +12,7 @@ export default function ServiceContent() {
             <div className="service_block" id={blockId}>
                     <img style={{display: 'block'}} id={imageId} src={image} alt="Logo" />
                     <h4 id='ser_head'>{header}</h4>
-                    <span className='service_span'>{description}</span>
+                    <p className='service_span'>{description}</p>
             </div>
         )
     }
@@ -26,7 +26,7 @@ export default function ServiceContent() {
             <div className="service_content">
                 <ServiceBlock 
                     image={Solar} imageId={'solar'}
-                    header={'Solar Solution'}
+                    header={'Solar Solutions'}
                     description={`Harness the power of the sun and embrace clean, 
                     renewable energy with our solar solutions.`}    
                 />

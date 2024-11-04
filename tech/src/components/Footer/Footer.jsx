@@ -12,7 +12,7 @@ export default function Footer() {
                     <p>
                         Whether you're looking to switch to solar energy or 
                         upgrade your cable services, our sales and marketing 
-                        company is here to help. <br/> Contact us today to start 
+                        company is here to help. Contact us today to start 
                         saving on your energy bills and enjoy reliable 
                         connectivity from the leading solar and cable companies 
                         in the DC, Maryland, and Virginia area. Snag the 
@@ -20,6 +20,7 @@ export default function Footer() {
                         more connected future.
                     </p>
                 </div>
+                <hr style={{opacity: '.2', margin: '0'}}/>
                 <div className="footer_content">
                     <div className="logo">
                         <img src={Logo} alt="Logo" />

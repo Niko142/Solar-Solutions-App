@@ -6,7 +6,7 @@
     display: flex;
     padding: 44px 150px 70px 150px;
     column-gap: 67px;
-    margin-bottom: 95px;
+    margin-bottom: 98px;
 }
 
 .contact_image {
@@ -15,32 +15,15 @@
 }
 
 .contact_text {
-    margin: 0; margin-bottom: 30px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    margin-bottom: 30px;
     max-width: 532px;
-    text-align: left;
     color: var(--white); 
     font-size: 18px; 
     line-height: 30px
 }
 
-.img1,
-.img2 {
-    border-radius: var(--rounding);
-}
-
 #right {margin-right: 31px;}
 
-.img1, .img2 {pointer-events: none;}
-
-.img1 { 
-    width: 291px; height: 457px; 
-    background: url('../Image/who.svg') no-repeat center;
-}
-.img2 {
-    position: absolute;
-    left: 275px;
-    width: 323px; height: 330px;
-    background: url('../Image/who1.svg') no-repeat center;
-    transform: translate(-76px, 86px);
-}
 .gap {display: flex;}

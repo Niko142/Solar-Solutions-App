@@ -67,9 +67,10 @@
    box-sizing: border-box;
  }
 
- body { 
-  min-width: 320px;
-  min-height: 480px;
+ body, html, .App {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
  
  /**
@@ -124,8 +125,8 @@
    Упрощаем работу с изображениями
   */
  img {
-  -webkit-user-select: none;
    display: block;
+   height: auto;
    max-width: 100%;
  }
  
@@ -149,18 +150,6 @@
      Плавный скролл
     */
    scroll-behavior: smooth;
- }
- 
- body {
-   /**
-     Пригодится в большинстве ситуаций
-     (когда, например, нужно будет "прижать" футер к низу сайта)
-    */
-   min-height: 100%;
-   /**
-     Унифицированный интерлиньяж
-    */
-   line-height: 1.5;
  }
  
  /**
