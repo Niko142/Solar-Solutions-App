@@ -26,7 +26,7 @@ footer {
 .footer_content {
     display: flex;
     justify-content: center;
-    padding-inline-start: 150px;
+    padding-inline-start: 150px; padding-inline-end: 100px;
     padding-top: 100px; padding-bottom: 70px;
 }
 
@@ -51,9 +51,9 @@ footer {
     height: 426px;
 }
 
-.link::before {top: -88px; left: -55.5px;}
-.services::before {top: -88px; left: -51.5px;}
-.contacts::before { top: -88px; left: -33px;}
+.link::before {top: -77px; left: -54.5px;}
+.services::before {top: -77px; left: -48.5px;}
+.contacts::before { top: -73px; left: -33px;}
 
 .logo > span {
     font-family: 'Roboto';
@@ -126,7 +126,7 @@ footer {
     margin-left: 15px;
 }
 
-#message {margin-left: 19px;}
+#message {margin-left: 19px; margin-bottom: 23px;}
 
 #phone {margin-bottom: 20px;}
 

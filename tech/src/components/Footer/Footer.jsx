@@ -60,8 +60,8 @@ export default function Footer() {
                             <li id='message'><a href="/#">companyname@gmail.com</a></li>
                             <li className="network">
                                 <div className="networks">
-                                    <a style={{marginRight: '9px'}} href="/#"><img src={Facebook} alt="Facebook" /></a>
-                                    <a style={{marginRight: '12px'}} href="/#"><img src={Twitter} alt="Twitter" /></a>
+                                    <a style={{marginRight: '7px'}} href="/#"><img src={Facebook} alt="Facebook" /></a>
+                                    <a style={{marginRight: '10px', paddingBottom: '2px'}} href="/#"><img src={Twitter} alt="Twitter" /></a>
                                     <a href="/#"><img src={Instagram} alt="Instagram" /></a>
                                 </div>
                             </li>
