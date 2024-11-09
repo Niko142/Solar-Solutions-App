@@ -5,12 +5,11 @@
 }
 .experience_wrapper {
     margin-top: 25px;
+    justify-content: flex-end;
     height: 432px;
     display: flex;
     flex-wrap: wrap;
-    /* display: grid;
-    grid-template-columns: repeat(4, 1fr); */
-    gap: 30px;
+    gap: 29px;
 
 }
 
@@ -21,7 +20,8 @@
 
 .block_content {
     padding-top: 10%;
-    padding-left: 10%;
+    padding-left: 9%;
+    padding-right: 6%;
     max-width: 262px;
 }
 

@@ -1,0 +1,101 @@
+@use '../forward';
+
+.experience {
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-bottom: 112px;
+
+    &_header {
+        display: inline-block;
+    }
+
+    &_wrapper {
+        background-color: antiquewhite;
+        margin-top: 25px;
+        justify-content: flex-end;
+        height: 432px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 29px;
+    }
+    
+    &_block {
+        position: relative;
+        border-radius: forward.$rounding;
+    }
+
+    &_content {
+        padding-top: 10%;
+        padding-left: 9%;
+        padding-right: 6%;
+        max-width: 262px;
+
+        & .text_block {
+            max-height: 88px;
+            display: block;
+            font-weight: forward.$regular;
+            font-size: 16px; line-height: 1.375;
+            margin-top: 18px;
+            color: forward.$white;
+        }
+    }
+
+}
+
+// .experience_block {
+//             position: relative;
+//             border-radius: $rounding;
+
+//             & .experience_content {
+//                 padding-top: 10%;
+//                 padding-left: 9%;
+//                 padding-right: 6%;
+//                 max-width: 262px;
+
+//                 & .experience_text {
+//                     max-height: 88px;
+//                     display: block;
+//                     font-weight: $regular;
+//                     font-size: $xs; line-height: 1.375;
+//                     margin-top: $sm;
+//                     color: $white;
+//                 }
+//             }
+//         }
+
+// .block {
+//     position: relative;
+//     border-radius: var(--rounding);
+// }
+
+// .block_content {
+//     padding-top: 10%;
+//     padding-left: 9%;
+//     padding-right: 6%;
+//     max-width: 262px;
+// }
+
+// .text_block {
+//     max-height: 88px;
+//     display: block;
+//     font-weight: 400;
+//     font-size: 16px; line-height: 1.375;
+//     margin-top: 18px;
+//     color: var(--white);
+// }
+
+// @media screen and (max-width: 1000px) {
+//     .block_content h3 {
+//         font-size: 20px;
+//     }
+//     .block_content span {font-size: 14px;}
+
+//     .block {max-height: 350px;}
+// }
+
+// @media screen and (max-width: 800px) {
+//     .experience_wrapper {
+//         padding-inline: 100px;
+//         grid-template-columns: repeat(2, 263px);
+//     }
+// }

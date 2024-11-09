@@ -12,13 +12,14 @@
 }
 
 #ser_head {
+    margin-bottom: 6px;
     line-height: 1.625;
 }
 
-#solar {margin-bottom: 21px; margin-top: 25px;}
-#cable {margin-bottom: 18.5px; margin-top: 30.5px;}
-#deal {margin-bottom: 8px; margin-top: 23.5px;}
-#consultation {margin-bottom: 17px; margin-top: 30.5px;}
+#solar {margin-bottom: 21px; margin-top: 23px;}
+#cable {margin-bottom: 17.5px; margin-top: 30.5px;}
+#deal {margin-bottom: 6px; margin-top: 21.5px;}
+#consultation {margin-bottom: 16px; margin-top: 29.5px;}
 
 #last {
     /* Стоит запомнить данный подход */
@@ -36,6 +37,7 @@
 
 .service_span {
     font-family: 'Roboto';
+    max-width: 294px;
     font-weight: 400;
     font-size: 18px; line-height: 1.3888888888888888888888888888889;
     color: var(--super-grey);

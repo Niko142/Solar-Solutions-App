@@ -1,4 +1,3 @@
-import './Footer.css';
 import Logo from '../Image/Footer_logo.svg';
 import Facebook from '../Image/facebook.svg';
 import Twitter from '../Image/twitter.svg';
@@ -7,9 +6,9 @@ import Instagram from '../Image/instagram.svg';
 export default function Footer() {
     return (
         <footer>
-            <div className="footer__wrapper">
-                <div className="footer_header">
-                    <p>
+            <div className="footer">
+                <div className="footer_head">
+                    <p className='footer_description'>
                         Whether you're looking to switch to solar energy or 
                         upgrade your cable services, our sales and marketing 
                         company is here to help. Contact us today to start 
@@ -22,9 +21,9 @@ export default function Footer() {
                 </div>
                 <hr style={{opacity: '.2', margin: '0'}}/>
                 <div className="footer_content">
-                    <div className="logo">
+                    <div className="footer_logo">
                         <img src={Logo} alt="Logo" />
-                        <span> 
+                        <span className='footer_logo_desc'> 
                             Contact us today to explore our services and 
                             take advantage of the great deals available 
                             from the leading solar and cable companies in 
@@ -33,42 +32,43 @@ export default function Footer() {
                             solutions for your energy and connectivity needs.
                         </span>
                     </div>
-                    <div className="link">
-                        <span className='head'>Quick Links</span>
-                        <ul>
-                            <li><a href="/#">Home</a></li>
-                            <li><a href="/#">About us</a></li>
-                            <li><a href="/#">Solar Initiatives</a></li>
-                            <li><a href="/#">Our Services</a></li>
-                            <li><a href="/#">Community</a></li>
-                            <li><a href="/#">Aesthetics</a></li>
+                    <div className="footer_link">
+                        <span className='footer_title'>Quick Links</span>
+                        <ul className='footer_nav'>
+                            <li className='footer_item'><a href="/#">Home</a></li>
+                            <li className='footer_item'><a href="/#">About us</a></li>
+                            <li className='footer_item'><a href="/#">Solar Initiatives</a></li>
+                            <li className='footer_item'><a href="/#">Our Services</a></li>
+                            <li className='footer_item'><a href="/#">Community</a></li>
+                            <li className='footer_item'><a href="/#">Aesthetics</a></li>
                         </ul>
                     </div>
-                    <div className="services">
-                        <span className='head'>Services</span>
-                        <ul>
-                            <li><a href="/#">Solar Solution</a></li>
-                            <li><a href="/#">Cable Services</a></li>
-                            <li><a href="/#">Deals and Promotions</a></li>
-                            <li><a href="/#">Consultation and Support</a></li>
+                    <div className="footer_services">
+                        <span className='footer_title'>Services</span>
+                        <ul className='footer_nav'>
+                            <li className='footer_item'><a href="/#">Solar Solution</a></li>
+                            <li className='footer_item'><a href="/#">Cable Services</a></li>
+                            <li className='footer_item'><a href="/#">Deals and Promotions</a></li>
+                            <li className='footer_item'><a href="/#">Consultation and Support</a></li>
                         </ul>
                     </div>
-                    <div className="contacts">
-                        <span className="head">Contact</span>
-                        <ul>
-                            <li id='phone'><a href="/#">0123456789</a></li>
-                            <li id='message'><a href="/#">companyname@gmail.com</a></li>
-                            <li className="network">
-                                <div className="networks">
-                                    <a style={{marginRight: '7px'}} href="/#"><img src={Facebook} alt="Facebook" /></a>
-                                    <a style={{marginRight: '10px', paddingBottom: '2px'}} href="/#"><img src={Twitter} alt="Twitter" /></a>
-                                    <a href="/#"><img src={Instagram} alt="Instagram" /></a>
+                    <div className="footer_contacts">
+                        <span className="footer_title">Contact</span>
+                        <ul className='footer_nav'>
+                            <li className='footer_item footer_phone'><a href="/#">0123456789</a></li>
+                            <li className='footer_item footer_message'><a href="/#">companyname@gmail.com</a></li>
+                            <li className="footer_item footer_network">
+                                <div className="footer_block_networks">
+                                    <a className='footer_links footer_facebook' style={{marginRight: '7px', marginLeft: '-2px   '}} href="/#"><img src={Facebook} alt="Facebook" /></a>
+                                    <a className='footer_links footer_twitter' style={{marginRight: '10px', paddingBottom: '2px'}} href="/#"><img src={Twitter} alt="Twitter" /></a>
+                                    <a className='footer_links footer_instagram' href="/#"><img src={Instagram} alt="Instagram" /></a>
                                 </div>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div className="footer_end">
+                <hr style={{opacity: '.2', margin: '0'}}/>
+                <div className="footer_floor">
                     <span>© 2023 Company Name  -  developed by Roots Digital Marketing</span>
                 </div>
             </div>

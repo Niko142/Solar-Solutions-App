@@ -1,0 +1,33 @@
+@use '../forward';
+
+.contact {
+    background-color: forward.$red;
+
+    &_wrapper {
+        display: flex;
+        padding: 44px 150px 70px 150px;
+        column-gap: 67px;
+        margin-bottom: 98px;
+    }
+
+    &_header {
+        color: forward.$white; 
+        padding-top: 46px; 
+        margin-bottom: 6px;
+    }
+
+    &_image {
+        position: relative;
+        display: flex;
+    }
+
+    &_text {
+        font-family: forward.$Poppins;
+        font-weight: forward.$regular;
+        margin-bottom: 32px;
+        max-width: 532px;
+        color: forward.$white; 
+        font-size: forward.$sm; 
+        line-height: 1.6666666666666666666666666666667;
+    }
+}

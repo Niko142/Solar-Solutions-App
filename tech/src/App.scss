@@ -1,0 +1,106 @@
+    @use './styles/forward' as f;
+    @use './styles/component_styles/Header.scss';
+    @use './styles/component_styles/Solution.scss';
+    @use './styles/component_styles/Experience.scss';
+    @use './styles/component_styles/Button.scss';
+    @use './styles/component_styles/Choose.scss';
+    @use './styles/component_styles/Contact.scss';
+    @use './styles/component_styles/Service.scss';
+    @use './styles/component_styles/Footer.scss';
+
+  @font-face {
+    font-family: f.$Poppins;
+    src: url("../src/Poppins/Poppins-Bold.woff2") format('woff2');
+    font-weight: f.$bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: f.$Poppins;
+    src: url("../src/Poppins/Poppins-Medium.woff2") format('woff2');
+    font-weight: f.$medium;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: f.$Poppins;
+    src: url("../src/Poppins/Poppins-Regular.woff2") format('woff2');
+    font-weight: f.$regular;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: f.$Roboto;
+    src: url("../src/Roboto/Roboto-Regular.woff2") format('woff2');
+    font-weight: f.$regular;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: f.$Roboto;
+    src:url("../src/Roboto/Roboto-Light.woff2") format('woff2');
+    font-weight: f.$light;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  h1, h2, h3, h4, h5 {
+    font-family: f.$Poppins;
+    font-weight: f.$bold;
+    margin: 0;
+  }
+  
+  h1 {
+    font-weight: f.$bold;
+    font-size: 50px; line-height: 1.7;
+    color: f.$black;
+  }
+  
+  h2 {
+    display: block;
+    font-size: 58px;
+    line-height: 0.7;
+    color: f.$red;
+    margin-bottom: 17px;
+  }
+  
+  h3 {
+    font-size: 24px;
+    max-width: 131px;
+    line-height: 1.29167;
+    color: f.$white;
+  }
+  
+  h4 {
+    font-size: 24px;
+    line-height: 1.20833;
+    color: f.$light-grey;
+  }
+  
+  h5 {
+    font-size: 20px;
+    line-height: 1.25;
+    color: f.$red;
+  }
+  
+  span {font-family: f.$Roboto, sans-serif;}
+  
+  .App {max-width: f.$max-size; margin: 0 auto;}
+
+  li {
+    text-decoration: none;
+    list-style-type: none;
+    a {
+        text-decoration: none;
+    }
+  }
+  
+  body {
+    margin: 0 auto;
+    padding: 0;
+  }
+  

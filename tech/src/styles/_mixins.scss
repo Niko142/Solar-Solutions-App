@@ -1,0 +1,29 @@
+$max-size: 1440px;
+$laptop : 1070px;
+$tablet: 768px;
+$mobileL: 375px;
+
+@mixin header () {
+    @media screen and (max-width: $laptop) {
+        @content
+    }
+};
+
+@mixin solutionLaptop () {
+    @media screen and (max-width: $laptop) {
+        @content
+    }
+};
+
+@mixin solutionTablet () {
+    @media screen and (max-width: $tablet) {
+        @content
+    }
+};
+
+@mixin mobileL () {
+    @media screen and (max-width: $mobileL) {
+        @content
+    }
+}
+

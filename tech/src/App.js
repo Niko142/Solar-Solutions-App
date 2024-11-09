@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import ChooseBlock from './components/ChooseBlock/ChooseBlock';
 import ContactContent from './components/Contact/ContactBlock';
 import ExperienceBlock from './components/Experience/ExperienceBlock';
@@ -10,9 +10,9 @@ import Solution from './components/Solutions/SolutionBlock';
 function App() {
   return (
     <div className="App">
-      <Header />
+      {/* <Header />
       <Solution />
-      <ExperienceBlock />
+      <ExperienceBlock /> */}
       <ChooseBlock />
       <ContactContent />
       <ServiceContent />

@@ -1,4 +1,3 @@
-import './Choose.css';
 import { choosing } from '../Data';
 
 export default function ChooseBlock() {
@@ -6,9 +5,9 @@ export default function ChooseBlock() {
     const ChooseContent = ({ number, header, desc, }) => {
         return (
             <div className="choose_block">
-                <h2>{number}</h2>
-                <h4>{header}</h4>
-                <p style={{fontFamily: 'Roboto', color: 'var(--super-grey)', maxWidth: '300px', fontWeight: '400'}}>{desc}</p>
+                <h2 className='choose_number'>{number}</h2>
+                <h4 className='choose_block_header'>{header}</h4>
+                <p className='choose_description'>{desc}</p>
             </div>
         )
     }
@@ -16,7 +15,7 @@ export default function ChooseBlock() {
     const Choose = choosing.map((item, ind) => {
         return (
             <ChooseContent 
-                key={ind} 
+                key={ind}
                 number={item.number}
                 header={item.header}
                 desc={item.description}
@@ -28,7 +27,7 @@ export default function ChooseBlock() {
         <section className="choose">
             <div className="choose_wrapper">
                 <div className="choose_description">
-                    <h1 className='choose_h'>Why Choose Us?</h1>
+                    <h1 className='choose_header'>Why Choose Us?</h1>
                     <p className='choose_text'> 
                         Whether you're looking to switch to solar 
                         energy or upgrade your cable services, our sales 

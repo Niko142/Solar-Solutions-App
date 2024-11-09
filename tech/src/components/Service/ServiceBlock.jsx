@@ -1,4 +1,4 @@
-import './Service.css';
+// import './Service.css';
 import Solar from '../Image/Solar_mask.svg';
 import Cable from '../Image/Cable_mask.svg';
 import Deal from '../Image/Deal_mask.svg';
@@ -7,21 +7,21 @@ import Service from '../Image/Service.svg';
 
 export default function ServiceContent() {
 
-    const ServiceBlock = ({imageId, image, blockId, header, description }) => {
+    const ServiceBlock = ({imageId, image, header, description }) => {
         return (
-            <div className="service_block" id={blockId}>
-                    <img style={{display: 'block'}} id={imageId} src={image} alt="Logo" />
-                    <h4 id='ser_head'>{header}</h4>
-                    <p className='service_span'>{description}</p>
+            <div className="service_block">
+                    <img className='service_logo' style={{display: 'block'}} id={imageId} src={image} alt="Logo" />
+                    <h4 id='service_block_header'>{header}</h4>
+                    <p className='service_description'>{description}</p>
             </div>
         )
     }
 
     return (
         <section className="service">
-            <div className="service_header">
-                <h5>Our Services</h5>
-                <h1 id='h_serv'>What We Do</h1>
+            <div className="service_title">
+                <h5 className='service_header'>Our Services</h5>
+                <h1 className='service_post_header'>What We Do</h1>
             </div>
             <div className="service_content">
                 <ServiceBlock 
@@ -30,7 +30,7 @@ export default function ServiceContent() {
                     description={`Harness the power of the sun and embrace clean, 
                     renewable energy with our solar solutions.`}    
                 />
-                <div className="service_image">
+                <div className="service_illustration">
                     <img src={Service} alt="Service" />
                 </div>
                 <ServiceBlock 
@@ -47,7 +47,6 @@ export default function ServiceContent() {
                 />
                 <ServiceBlock 
                     image={Consultation} imageId={'consultation'}
-                    blockId={'last'}
                     header={'Consultation and Support'}
                     description={`We understand that navigating the solar and 
                         cable landscape can be overwhelming.`}
