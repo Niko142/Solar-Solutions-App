@@ -74,28 +74,72 @@
         max-width: 290px;
     }
 
-    // @media screen and (max-width: 1255px) {
-    //     .choose_header {
-    //         font-size: 42px;
-    //     }
+    @media screen and (max-width: 1255px) {
+        .choose_header {
+            font-size: 42px;
+        }
 
-    //     .choose_text {
-    //         font-size: 16px;
-    //     }
+        .choose_text {
+            font-size: 16px;
+        }
 
-    //     .choose_block {
-    //         & .choose_description {
-    //             font-size: 16px;
-    //         }
-    //     }
-    // }
+        .choose_block {
+            & .choose_description {
+                font-size: 16px;
+            }
+        }
+    }
 
-    // @media screen and (max-width: 1120px) {
-    //     .choose_header {
-    //         font-size: 34px;
-    //     }
-    //     .choose_block {
-    //         // & .
-    //     }
-    // }
+    @media screen and (max-width: 1120px) {
+
+        padding: 111px 100px 110px 100px;
+
+        .choose_header {
+            font-size: 34px;    
+        }
+        .choose_block {
+            & .choose_number {font-size: 50px;}
+            & .choose_block_header {font-size: 20px;}
+            // & .choose_description {}
+        }
+    }
+
+    @media screen and (max-width: 885px) {
+        padding: 85px 70px 90px 70px;
+    }
+
+    @include forward.solutionTablet() {
+        padding: 70px 50px;
+        .choose_wrapper {
+            row-gap: 20px;
+        }
+        .choose_header {
+            padding-top: 20px;
+            font-size: 27px;
+        }
+        .choose_block_header {
+            line-height: 1.5;
+        }
+    }
+
+    @media screen and (max-width: 700px) {
+        padding: 50px 25px;
+    }
+
+    @media screen and (max-width: 650px) {
+        .choose_header {font-size: 24px;}
+        .choose_text {font-size: 15px;}
+        .choose_wrapper {column-gap: 20px; grid-template-rows: repeat(2, 250px);}
+        .choose_block {padding: 8%;
+            & .choose_number {font-size: 35px; margin-bottom: 7px;}
+            & .choose_block_header {font-size: 18px; line-height: 1.3;}
+            & .choose_description {font-size: 14px;}
+        }
+    }
+
+    @media screen and (max-width: 565px) {
+        padding: 17px;
+        .choose_wrapper {display: flex; flex-wrap: wrap;}
+        .choose_text {font-size: 14px;}
+    }
 }

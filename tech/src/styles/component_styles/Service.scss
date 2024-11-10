@@ -55,5 +55,17 @@
             font-size: forward.$sm; line-height: 1.3888888888888888888888888888889;
             color: forward.$super-grey;
         }
+
+
+    }
+    @include forward.solutionLaptops {
+        .service_content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .service_illustration {
+            display: none;
+        }
     }
 }

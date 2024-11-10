@@ -38,6 +38,7 @@
 
     @include forward.solutionTablet() {     
         padding-inline: 35px;
+        margin-bottom: 50px;
         .solution_block_text {
             max-width: 257px;
             font-size: 32px;
@@ -57,6 +58,10 @@
             max-width: 127px;
             font-size: 16px;
         }
+    }
+
+    @include forward.mobileS {
+        margin-bottom: 20px;
     }
 
 }

@@ -1,7 +1,10 @@
 $max-size: 1440px;
 $laptop : 1070px;
+$laptops: 1024px;
 $tablet: 768px;
+$mobileXL: 425px;
 $mobileL: 375px;
+$mobileS: 320px;
 
 @mixin header () {
     @media screen and (max-width: $laptop) {
@@ -15,8 +18,20 @@ $mobileL: 375px;
     }
 };
 
+@mixin solutionLaptops () {
+    @media screen and (max-width: $laptops) {
+        @content
+    }
+};
+
 @mixin solutionTablet () {
     @media screen and (max-width: $tablet) {
+        @content
+    }
+};
+
+@mixin mobileXl () {
+    @media screen and (max-width: $mobileXL) {
         @content
     }
 };
@@ -25,5 +40,10 @@ $mobileL: 375px;
     @media screen and (max-width: $mobileL) {
         @content
     }
-}
+};
 
+@mixin mobileS () {
+    @media screen and (max-width: $mobileS) {
+        @content
+    }
+};

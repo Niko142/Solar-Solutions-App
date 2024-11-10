@@ -7,6 +7,16 @@
     &_head {
         padding: 46.8px 240px 43.6px 150px;
 
+        @media screen and (max-width: 1010px) {
+            padding: 46.8px 150px 43.6px 116px;
+        }
+
+        @media screen and (max-width: 884px) {
+            padding: 35.8px 110px 36.6px 110px;
+
+            .footer_description {font-size: 16px;}
+        }
+
         & p {
             margin: 0;
             font-family: forward.$Roboto;
@@ -17,6 +27,7 @@
 
     &_content {
         display: flex; justify-content: center;
+        flex-wrap: wrap;
         padding-inline: 150px 100px;
         padding-top: 100px; padding-bottom: 70px;
     

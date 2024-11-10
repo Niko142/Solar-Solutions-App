@@ -10,9 +10,9 @@ import Solution from './components/Solutions/SolutionBlock';
 function App() {
   return (
     <div className="App">
-      {/* <Header />
+      <Header />
       <Solution />
-      <ExperienceBlock /> */}
+      <ExperienceBlock />
       <ChooseBlock />
       <ContactContent />
       <ServiceContent />

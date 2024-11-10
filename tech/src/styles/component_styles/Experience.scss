@@ -7,21 +7,36 @@
 
     &_header {
         display: inline-block;
+        @include forward.solutionTablet {
+            font-size: 42px;
+            line-height: 1.3;
+        }
+        
+        @media screen and (max-width: 530px) {
+            font-size: 32px;
+        }
     }
 
     &_wrapper {
-        background-color: antiquewhite;
         margin-top: 25px;
         justify-content: flex-end;
-        height: 432px;
         display: flex;
         flex-wrap: wrap;
         gap: 29px;
+
+        @media screen and (max-width: 1134px) {
+            justify-content: center;
+        }
     }
     
     &_block {
         position: relative;
+        height: 432px;
         border-radius: forward.$rounding;
+
+        @include forward.solutionTablet {
+            height: 325px;
+        }
     }
 
     &_content {
@@ -37,6 +52,12 @@
             font-size: 16px; line-height: 1.375;
             margin-top: 18px;
             color: forward.$white;
+        }
+    }
+
+    @include forward.mobileS {
+        .experience_header {
+            font-size: 26px;
         }
     }
 
