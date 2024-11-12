@@ -90,7 +90,17 @@ header {
         }
         
         .nav_ul_active {
-            transform: translateX(-100%); 
+            transform: translateX(-100%);
+            
+            & .nav_item {
+                & .nav_link {
+                    &:hover {color: forward.$white;}
+                }
+                
+                &:hover {
+                    background-color: forward.$light-grey;
+                }
+            }
         }
         .nav_button {
             transform: translateX(40px);
@@ -100,9 +110,52 @@ header {
             }
         }
     }
-
     @media screen and (max-width: 600px) {
         padding-inline: 31px 64px;
+
+        .nav_ul, .nav_ul_active {
+            right: -212.84px;
+            padding: 99px 30px 31px 27px;
+
+            & .nav_item, & .nav_link {
+                padding: 8px;
+            }
+        }
+    }
+    @media screen and (max-width: 500px) {
+        .nav_ul, .nav_ul_active {
+            right: -196.84px;
+            & .nav_item, & .nav_link {
+                padding: 4px;
+            }
+        }
+    }
+    @include forward.mobileXl {
+        .nav_logo {
+            width: 30%;
+        }
+    }
+    @include forward.mobileL {
+        .nav_ul, .nav_ul_active {
+            right: -170.84px;
+            padding: 97px 26px 23px 17px;
+            & .nav_item, & .nav_link {
+                padding: 1px;
+            }
+        }
+    }
+
+    @include forward.mobileS {
+        .nav_ul, .nav_ul_active {
+            right: -160.84px;
+            padding: 76px 17px 17px 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header{
+        padding: 20px 0;
     }
 }
 

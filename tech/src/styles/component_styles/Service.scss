@@ -23,6 +23,10 @@
         grid-template-columns: 360px 1fr 360px;
         grid-template-rows: repeat(2, 252px);
         margin-bottom: 101px;
+
+        @media screen and (max-width: 768px) {
+            margin-bottom: 40px;
+        }
     }
 
     &_block {
@@ -64,6 +68,12 @@
             flex-wrap: wrap;
             justify-content: center;
         }
+
+        .service_block{
+            padding-bottom: 5%;
+            &:last-child #service_block_header {font-size: 22px;}  
+        } 
+
         .service_illustration {
             display: none;
         }

@@ -6,6 +6,16 @@ $mobileXL: 425px;
 $mobileL: 375px;
 $mobileS: 320px;
 
+// footers
+$footerXL: 1378px;
+$footerL: 1113px;
+$footerM: 832px;
+$footerS: 782px;
+$footerSS: 742px;
+$footerXS: 545px;
+$footerMobileL: 467px;
+$footerMobileM: 375px;
+
 @mixin header () {
     @media screen and (max-width: $laptop) {
         @content
@@ -44,6 +54,56 @@ $mobileS: 320px;
 
 @mixin mobileS () {
     @media screen and (max-width: $mobileS) {
+        @content
+    }
+};
+
+// footer
+
+@mixin footerXL () {
+    @media screen and (max-width: $footerXL) {
+        @content
+    }
+};
+
+@mixin footerL () {
+    @media screen and (max-width: $footerL) {
+        @content
+    }
+};
+
+@mixin footerM () {
+    @media screen and (max-width: $footerM) {
+        @content
+    }
+};
+
+@mixin footerS () {
+    @media screen and (max-width: $footerS) {
+        @content
+    }
+};
+
+@mixin footerSS () {
+    @media screen and (max-width: $footerSS) {
+        @content
+    }
+};
+
+@mixin footerXS () {
+    @media screen and (max-width: $footerXS) {
+        @content
+    }
+};
+
+@mixin footerMobileL () {
+    @media screen and (max-width: $footerMobileL) {
+        @content
+    }
+};
+
+@mixin footerMobileM () {
+    @media screen and (max-width: $footerMobileM) {
         @content
     }
 };

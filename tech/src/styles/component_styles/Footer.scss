@@ -17,6 +17,10 @@
             .footer_description {font-size: 16px;}
         }
 
+        @include forward.footerS {padding: 46.8px 80px 43.6px 80px;}
+        @include forward.footerXS {padding: 35.8px 60px 35.6px 60px;}
+        @include forward.footerMobileL {padding: 30px}
+        @include forward.footerMobileM {padding: 12px}
         & p {
             margin: 0;
             font-family: forward.$Roboto;
@@ -26,9 +30,10 @@
     }
 
     &_content {
-        display: flex; justify-content: center;
+        display: flex;
         flex-wrap: wrap;
         padding-inline: 150px 100px;
+        row-gap: 35px;
         padding-top: 100px; padding-bottom: 70px;
     
         & .footer_logo {
@@ -44,6 +49,11 @@
             font-weight: forward.$light; 
             font-size: forward.$xs; line-height: 1.6875; 
             margin-top: 30px;
+
+            @include forward.footerXS {
+                font-size: 14px;
+            }
+
            }
         }
 
@@ -79,9 +89,9 @@
                         text-transform: inherit;
                         color: var(--opacity-white);
 
-                        &:hover {
-                            color: forward.$red;
-                        }
+                        @include forward.footerMobileM {font-size: 15px;}
+
+                        &:hover {color: forward.$red;}
                     }
                 }
             }
@@ -94,6 +104,8 @@
 
             &::before {
                 top: -77px; left: -56.5px;
+
+                @include forward.footerM {display: none;}
             }
          }
          & .footer_services {
@@ -103,6 +115,8 @@
 
             &::before {
                 top: -77px; left: -50.5px;
+
+                @include forward.footerL {display: none;}
             }
 
             & .footer_nav {
@@ -114,8 +128,20 @@
             position: relative;
             margin-left: 35.34px;
 
+            @media screen and (max-width: 1331px) {margin-left: 0;}
+
             &::before {
                 top: -73px; left: -35px;
+
+                @include forward.footerXL {display: none;}
+
+                @include forward.footerL {
+                    height: 225px;
+                    top: 19px;
+                    display: block;
+                }
+
+                @include forward.footerM {display: none;}
             }
 
             & .footer_nav {
@@ -175,6 +201,21 @@
             margin-top: 44px;
          }
 
+         @include forward.footerM {
+            padding-inline: 150px 100px;
+            row-gap: 0;
+            padding-top: 45px;
+            padding-bottom: 45px;
+            padding-inline: 100px;
+         }
+
+         @include forward.footerL {padding-inline: 80px;}
+         @include forward.footerXS {
+            padding-top: 35px; 
+            padding-bottom: 35px;
+            .footer_title {margin-top: 20px;}
+        }
+        @include forward.footerMobileL {padding: 41px;}
 
     }
 
@@ -186,5 +227,35 @@
         text-align: center;
         padding: 19px 0;
         font-size: forward.$xs; line-height: 1.5;
+
+        @include forward.footerMobileL {font-size: 14px;}
+    }
+
+    @include forward.footerXL {
+        .footer_contacts {flex-grow: 0;}
+    }
+    
+    @include forward.footerL {
+        .footer_contacts {margin-left: -25px;}
+        .footer_services {
+            transform: translateX(-52px);
+            // margin-left: 0;
+        }
+    }
+
+    @include forward.footerM {
+        .footer_contacts {margin-left: 3px;}
+    }
+
+    @include forward.footerSS {
+        .footer_link {transform: translateX(-57px);}
+        .footer_services {margin-left: auto; transform: translateX(0); margin-right: 0;}
+    }
+
+    @include forward.footerXS {
+        .footer_description {font-size: 14px;}
+        .footer_services {
+            margin-left: 0;
+        }
     }
 }
