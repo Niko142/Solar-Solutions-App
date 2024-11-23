@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/Solar-Solutions-App/static/css/main.4143dcee.css",
+    "main.js": "/Solar-Solutions-App/static/js/main.a6322f6a.js",
+    "static/js/453.4ec1ea4f.chunk.js": "/Solar-Solutions-App/static/js/453.4ec1ea4f.chunk.js",
+    "static/media/Internet.svg": "/Solar-Solutions-App/static/media/Internet.793479138ce8468d782c8762f4b43dfa.svg",
+    "static/media/Groups.svg": "/Solar-Solutions-App/static/media/Groups.73b1a80cc363d6e5a4cad6b4481b9248.svg",
+    "static/media/Phone.svg": "/Solar-Solutions-App/static/media/Phone.a83de800dbd2d9be63342b07806f8c97.svg",
+    "static/media/Cable.svg": "/Solar-Solutions-App/static/media/Cable.b527973b72a4957bea2b36713f2b05f2.svg",
+    "static/media/Solar.svg": "/Solar-Solutions-App/static/media/Solar.bfbb8ad572e84a9ee2a59bb0a43cf871.svg",
+    "static/media/Solution.svg": "/Solar-Solutions-App/static/media/Solution.97982b3a4346425ab79a3ff951389cfe.svg",
+    "static/media/Service.svg": "/Solar-Solutions-App/static/media/Service.973d7f3d2d2bb70a3b9b32af9f0cc61f.svg",
+    "static/media/Roboto-Regular.woff2": "/Solar-Solutions-App/static/media/Roboto-Regular.388de25a3abe00f4251d.woff2",
+    "static/media/Roboto-Light.woff2": "/Solar-Solutions-App/static/media/Roboto-Light.a41e30c85c0ac1edf0ef.woff2",
+    "static/media/Poppins-Regular.woff2": "/Solar-Solutions-App/static/media/Poppins-Regular.9641d5d087bc9e626d4c.woff2",
+    "static/media/Poppins-Bold.woff2": "/Solar-Solutions-App/static/media/Poppins-Bold.02d30d49f061087e6275.woff2",
+    "static/media/Poppins-Medium.woff2": "/Solar-Solutions-App/static/media/Poppins-Medium.13c404f85f4b8532e4e9.woff2",
+    "static/media/Consultation_mask.svg": "/Solar-Solutions-App/static/media/Consultation_mask.3caf321f19afef154c7ec089cacfcb2f.svg",
+    "static/media/Deal_mask.svg": "/Solar-Solutions-App/static/media/Deal_mask.cefed61b858ac470dee6440647a52fe4.svg",
+    "static/media/Solar_mask.svg": "/Solar-Solutions-App/static/media/Solar_mask.7c2270534fe97cf49251dba6bba5cb4c.svg",
+    "static/media/Cable_mask.svg": "/Solar-Solutions-App/static/media/Cable_mask.6168944605f615d1ffc1d730430331a6.svg",
+    "static/media/Footer_logo.svg": "/Solar-Solutions-App/static/media/Footer_logo.7a7ce8e1a38b45cf26d2e36526ae699e.svg",
+    "static/media/Logo.svg": "/Solar-Solutions-App/static/media/Logo.41068b3182c9bcc0b2e51e2e221ea2bf.svg",
+    "static/media/instagram.svg": "/Solar-Solutions-App/static/media/instagram.bdd5b07f2dac835e16f0bba8e36890d0.svg",
+    "static/media/phones.svg": "/Solar-Solutions-App/static/media/phones.907db37bbd8df547262b.svg",
+    "static/media/twitter.svg": "/Solar-Solutions-App/static/media/twitter.70b6f6202d7cced76b65866c7fd1209c.svg",
+    "index.html": "/Solar-Solutions-App/index.html",
+    "static/media/message.svg": "/Solar-Solutions-App/static/media/message.3ab2e055d77af151e4e5.svg",
+    "static/media/facebook.svg": "/Solar-Solutions-App/static/media/facebook.fcb01237a91c7a66288f9898a090b611.svg",
+    "main.4143dcee.css.map": "/Solar-Solutions-App/static/css/main.4143dcee.css.map",
+    "main.a6322f6a.js.map": "/Solar-Solutions-App/static/js/main.a6322f6a.js.map",
+    "453.4ec1ea4f.chunk.js.map": "/Solar-Solutions-App/static/js/453.4ec1ea4f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4143dcee.css",
+    "static/js/main.a6322f6a.js"
+  ]
+}
