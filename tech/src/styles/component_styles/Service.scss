@@ -78,4 +78,8 @@
             display: none;
         }
     }
+
+    @include forward.mobileS {
+        .service_content {padding-inline: 3px;}
+    }
 }

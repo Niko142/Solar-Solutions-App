@@ -16,7 +16,7 @@ export default function Header() {
             <nav className="nav">   
                 <img className='nav_logo' src={Logo} alt="Logo"/>
                 <ul className={active ? 'nav_ul_active' : 'nav_ul'}>
-                    <li className='nav_item'><a className='nav_item nav_link' href="/#">Home</a></li>
+                    <li className='nav_item'><a className='nav_item nav_link' href="/">Home</a></li>
                     <li className='nav_item'><a className='nav_link' href="/#">About us</a></li>
                     <li className='nav_item'><a className='nav_link' href="/#">Solar Initiatives</a></li>
                     <li className='nav_item'><a className='nav_link' href="/#">Our Services</a></li>

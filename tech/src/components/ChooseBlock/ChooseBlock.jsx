@@ -22,7 +22,7 @@ export default function ChooseBlock() {
             />
         )
     })
-
+    
     return (
         <section className="choose">
             <div className="choose_wrapper">

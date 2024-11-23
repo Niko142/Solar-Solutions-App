@@ -48,19 +48,22 @@
     font-display: swap;
   }
   
-  h1, h2, h3, h4, h5 {
+  %header {
     font-family: f.$Poppins;
     font-weight: f.$bold;
     margin: 0;
   }
   
   h1 {
+    @extend %header;
     font-weight: f.$bold;
-    font-size: 50px; line-height: 1.7;
+    font-size: 50px; 
+    line-height: 1.7;
     color: f.$black;
   }
   
   h2 {
+    @extend %header;
     display: block;
     font-size: 58px;
     line-height: 0.7;
@@ -69,6 +72,7 @@
   }
   
   h3 {
+    @extend %header;
     font-size: 24px;
     max-width: 131px;
     line-height: 1.29167;
@@ -76,12 +80,14 @@
   }
   
   h4 {
+    @extend %header;
     font-size: 24px;
     line-height: 1.20833;
     color: f.$light-grey;
   }
   
   h5 {
+    @extend %header;
     font-size: 20px;
     line-height: 1.25;
     color: f.$red;

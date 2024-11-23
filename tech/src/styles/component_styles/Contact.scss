@@ -83,6 +83,7 @@
         .contact_wrapper {padding: 40px;}
     }
     @include forward.mobileS {
+        .contact_text {font-size: 12px;}
         .contact_wrapper {padding: 15px;}
     }
 }

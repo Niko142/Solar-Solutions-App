@@ -39,6 +39,8 @@
         & .footer_logo {
            margin-right: 42px;
 
+           @include forward.mobileXl {margin-right: 0; text-align: center;}
+
            & img, & .footer_logo_desc {
             display: block;
             max-width: 336px;
