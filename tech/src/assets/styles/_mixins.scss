@@ -1,0 +1,161 @@
+$laptop: 1024px;
+$tablet: 768px;
+$mobileXL: 425px;
+$mobileL: 375px;
+$mobileS: 320px;
+
+
+$choose: 1285px;
+$header: 1235px;
+$contact: 1135px;
+$headerSm: 600px;
+
+$experienceSm: 630px;
+
+// header
+@mixin header() {
+  @media screen and (width < $header) {
+    @content;
+  }
+}
+
+@mixin headerPadding() {
+  @media screen and (max-width: $headerSm) {
+    @content;
+  }
+}
+
+@mixin headerMobile() {
+  @media screen and (max-width: $mobileXL) {
+    @content;
+  }
+}
+
+// solutionBlock
+@mixin solutionLaptop() {
+  @media screen and (max-width: $laptop) {
+    @content;
+  }
+}
+
+@mixin solutionTablet() {
+  @media screen and (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin solutionMobile() {
+  @media screen and (max-width: $mobileXL) {
+    @content;
+  }
+}
+
+// Experience
+@mixin experienceLaptop() {
+  @media screen and (max-width: $laptop) {
+    @content;
+  }
+}
+
+@mixin experienceTablet() {
+  @media screen and (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin experienceMob() {
+  @media screen and (max-width: $experienceSm) {
+    @content;
+  }
+}
+
+@mixin chooseGrid() {
+  @media screen and (max-width: $header) {
+    @content;
+  }
+}
+
+// choose
+@mixin chooseLaptop() {
+  @media screen and (max-width: $laptop) {
+    @content;
+  }
+}
+
+@mixin chooseTablet() {
+  @media screen and (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin contactLaptop-XL() {
+  @media screen and (max-width: $choose) {
+    @content;
+  }
+}
+
+@mixin contactLaptop-L() {
+  @media screen and (max-width: $contact) {
+    @content;
+  }
+}
+
+@mixin contactTablet() {
+  @media screen and (max-width: 995px) {
+    @content;
+  }
+}
+
+@mixin contactMobile() {
+  @media screen and (max-width: 760px) {
+    @content;
+  }
+}
+
+@mixin contactMobile-XL() {
+  @media screen and (max-width: $mobileXL) {
+    @content;
+  }
+}
+
+@mixin serviceMax() {
+  @media screen and (max-width: 1300px) {
+    @content;
+  }
+}
+
+@mixin serviceLaptop() {
+  @media screen and (max-width: 1150px) {
+    @content;
+  }
+}
+
+@mixin serviceLaptops() {
+  @media screen and (max-width: $laptop) {
+    @content;
+  }
+}
+
+@mixin serviceTablet() {
+  @media screen and (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin mobileXl() {
+  @media screen and (max-width: $mobileXL) {
+    @content;
+  }
+}
+
+@mixin mobileL() {
+  @media screen and (max-width: $mobileL) {
+    @content;
+  }
+}
+
+@mixin mobileS() {
+  @media screen and (max-width: $mobileS) {
+    @content;
+  }
+}

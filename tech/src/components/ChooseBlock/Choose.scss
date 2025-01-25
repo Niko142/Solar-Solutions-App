@@ -1,0 +1,109 @@
+@use "assets/styles/forward.scss" as f;
+
+.choose {
+    padding: 110px 0;
+    background-color: f.$grey;
+
+    & .container {
+        padding-inline: 150px 149px;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 31px 30px;
+    }
+
+    article {
+        // придумать что делать с min-height
+        box-sizing: border-box;
+        max-height: 304px;
+        // min-height: 304px;
+        &.choose__start {
+            padding-top: 39px;
+            & h2 {
+                font-size: clamp(42px, 10vw, 50px);
+                line-height: 134%;
+                margin-left: 2px;
+                margin-bottom: 13px;
+            }
+            & p {
+                max-width: 320px;
+                color: f.$raven;
+                line-height: 122%;
+                text-align: start;
+            }
+        }
+        &.choose__card {
+            border-radius: 10px;
+            background-color: f.$white;
+            padding: 62px 29px;
+            & span {
+                color: f.$red;
+                font-family: 'Poppins';
+                font-weight: 700;
+                font-size: 58px;
+                line-height: 51%;
+            }
+            & h4 {
+                line-height: 162.5%;
+                margin-bottom: 9px;
+                margin-top: 15px;
+                color: f.$light-grey;
+            }
+
+            & p {
+                color: f.$super-grey;
+            }
+
+            &.card-hover {
+                box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+                background-color: f.$red;
+                & :is(h4, p, span) {
+                    color: f.$white;
+                }
+            }
+        }
+    }
+
+    @include f.chooseGrid() {
+        & .container {
+            padding-inline: 100px;
+        }
+        &__list {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+    }
+
+    @include f.chooseLaptop() {
+        padding: 50px 0;
+        & .container {
+            padding-inline: 60px;
+        }
+    }
+
+    @include f.chooseTablet() {
+        & .container {
+            padding-inline: 30px;
+        }
+        &__list {
+            grid-template-columns: 1fr;
+        }
+        article {
+            min-height: auto;
+            &.choose__start {
+                padding-top: 10px;
+                & h2, & p {
+                    text-align: center;
+                }
+                & p {
+                    max-width: none;
+                }
+            }
+            &.choose__card {
+                padding: 38px 25px;
+            }
+        }
+    }
+}

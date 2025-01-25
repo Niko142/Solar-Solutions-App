@@ -1,13 +1,17 @@
-// import './Solution.css'
-import Solutions from '../Image/Solution.svg'
+import Solutions from "assets/images/Solution.svg";
 
-export default function Solution() {
-    return (
-        <section className="solution">
-            <div className="solution_block">
-                <img className='solution_block_background' src={Solutions} alt="Solution" />
-                <p className='solution_block_text'>Solar <span>Solutions</span> for a Sustainable Tomorrow<span>.</span></p>
-            </div>
-        </section>
-    )
+export default function SolutionBlock() {
+  return (
+    <section className="solution" id="solution">
+      <div className="container">
+        <div className="image__background">
+          <img src={Solutions} alt="Background" />
+          <h1 className="solution__title">
+            Solar <span>Solutions</span> for a Sustainable Tomorrow{" "}
+            <span>.</span>
+          </h1>
+        </div>
+      </div>
+    </section>
+  );
 }

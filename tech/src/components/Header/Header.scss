@@ -1,0 +1,140 @@
+@use "assets/styles/forward.scss" as f;
+
+.header {
+  padding: 30px 0;
+  background-color: f.$dark;
+  margin-bottom: 34px;
+
+  & .container {
+    display: flex;
+    padding-inline: 86px 79px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    max-width: clamp(80px, 17vw, 147px);
+  }
+
+  &__navbar {
+    display: flex;
+    & ul {
+      display: flex;
+      width: 876px;
+      justify-content: space-between;
+    }
+
+    & ul a.header__link {
+      font: {
+        family: "Poppins";
+        size: f.$sm;
+        weight: f.$medium;
+      }
+      color: f.$white;
+      line-height: 150%;
+      text-transform: uppercase;
+
+      &:hover {
+        color: f.$red;
+      }
+    }
+  }
+  @include f.header() {
+    &__navbar {
+      & .header__list,
+      & .header__list-toogle {
+        overflow: hidden;
+        max-width: clamp(182px, 40vw, 280px);
+        box-sizing: border-box;
+        z-index: 99;
+        position: absolute;
+        display: block;
+        top: 0;
+        right: 0;
+        background-color: f.$red;
+        padding: 115px 30px 40px 30px;
+        transition: transform 0.7s ease, opacity 0.8s ease;
+
+        & li {
+          padding: 6px 0;
+
+          & a {
+            &:hover {
+              box-sizing: border-box;
+              outline-offset: 3px;
+              outline: 2px solid f.$black;
+              color: f.$black;
+            }
+          }
+        }
+      }
+
+      & .header__list {
+        visibility: hidden;
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+
+      & .header__list.btn-toogle {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+    }
+
+    button.nav__btn {
+      display: block;
+    }
+  }
+
+  @include f.headerPadding() {
+    & .container {
+      padding-inline: 30px;
+    }
+
+    &__navbar {
+      & .header__list,
+      & .header__list-toogle {
+        padding: 70px 20px 10px 20px;
+
+        & li a.header__link {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  @include f.headerMobile() {
+    padding: 15px 0;
+    margin-bottom: 25px;
+  }
+}
+
+button.nav__btn {
+  width: 40px;
+  height: 40px;
+  display: none;
+  position: relative;
+  box-sizing: border-box;
+  z-index: 100;
+  border: 1px solid f.$light-grey;
+  outline: 0;
+  border-radius: f.$rad;
+  background-color: f.$white;
+
+  & span.btn__line {
+    position: absolute;
+    top: 18px;
+    left: 33%;
+    background-color: f.$black;
+    height: 3px;
+    width: 15px;
+
+    &:nth-child(1) {
+      transform: translateY(-7px);
+    }
+    &:nth-child(3) {
+      transform: translateY(7px);
+    }
+  }
+}

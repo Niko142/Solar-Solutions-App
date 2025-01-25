@@ -1,0 +1,137 @@
+@use "assets/styles/forward" as f;
+
+.footer {
+  background-color: f.$dark;
+  color: f.$opacity-white;
+
+  & .container {
+    padding-inline: 150px;
+  }
+
+  &__head {
+    padding: 47px 0 44px 0;
+    & p {
+      font-weight: 300;
+      line-height: 170%;
+      max-width: 1050px;
+      text-align: start;
+    }
+  }
+
+  &__main {
+    padding: 25.5px 0 23px 0;
+    & .container {
+      display: flex;
+      padding-inline: 150.5px;
+      flex-wrap: wrap;
+    }
+
+    & article.footer__block {
+      padding: 77px 0 47px 0;
+      &:not(:last-child) {
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+      }
+      & ul {
+        & li a {
+          font-family: "Roboto";
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 218.75%;
+          color: f.$opacity-white;
+
+          &:hover {
+            color: f.$red;
+          }
+        }
+      }
+    }
+
+    & article.footer-logo {
+      padding-right: 41px;
+      & img {
+        max-width: 148px;
+        margin-bottom: 30px;
+      }
+      & p {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 168.75%;
+        max-width: 336px;
+      }
+    }
+
+    & article.footer-link {
+      padding-inline: 55.5px 41.5px;
+    }
+
+    & article.footer-services {
+      padding-inline: 51px;
+    }
+
+    & article.footer-contacts {
+      padding-inline: 32px 0;
+      flex: 1;
+      & h6 {
+        margin-bottom: 9px;
+      }
+
+      & .footer__item {
+        position: relative;
+        transform: translateX(36px);
+        margin-bottom: 21px;
+        max-height: 19px;
+        &.footer-phone {
+          line-height: 100%;
+          &::before {
+            content: url("../../assets/images/phones.svg");
+            position: absolute;
+            width: 21px;
+            height: 21px;
+            top: 7px;
+            left: -37px;
+          }
+        }
+        &.footer-email {
+          margin-bottom: 30px;
+          &::before {
+            content: url("../../assets/images/message.svg");
+            position: absolute;
+            top: 7px;
+            left: -37px;
+            width: 18.5px;
+            height: 18.5px;
+          }
+        }
+      }
+      & .footer__links {
+        display: flex;
+        align-items: center;
+        column-gap: 9px;
+
+        & .footer-facebook {
+          width: 22.5px;
+          height: 25px;
+        }
+        & .footer-twitter {
+            width: 26px;
+            height: 20px;
+        }
+        & .footer-facebook {
+            width: 24px;
+            height: 24px;
+        }
+      }
+    }
+  }
+
+  &__floor {
+    padding: 19px 0;
+    & p {
+      color: f.$white;
+      font-family: "Poppins";
+      text-align: center;
+      font-size: 16px;
+      line-height: 150%;
+    }
+  }
+}
