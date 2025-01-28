@@ -5,7 +5,7 @@ import groups from "assets/images/Groups.svg";
 export default function ContactModule() {
   const [type, setType] = useState("");
   return (
-    <section className="contact">
+    <section className="contact" id="contact">
       <div className="container">
         <div className="contact__main">
           <h2>Who We Are</h2>

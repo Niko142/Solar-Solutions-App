@@ -4,7 +4,7 @@ $mobileXL: 425px;
 $mobileL: 375px;
 $mobileS: 320px;
 
-
+$footexMax: 1390px;
 $choose: 1285px;
 $header: 1235px;
 $contact: 1135px;
@@ -156,6 +156,36 @@ $experienceSm: 630px;
 
 @mixin mobileS() {
   @media screen and (max-width: $mobileS) {
+    @content;
+  }
+}
+
+@mixin footerMax() {
+  @media screen and (max-width: $footexMax) {
+    @content;
+  }
+}
+
+@mixin footerLaptop() {
+  @media screen and (max-width: 1249px) {
+    @content;
+  }
+}
+
+@mixin footerLp() {
+  @media screen and (max-width: 1044px) {
+    @content;
+  }
+}
+
+@mixin footerTablet() {
+  @media screen and (max-width: 858px) {
+    @content;
+  }
+}
+
+@mixin footerTablets() {
+  @media screen and (max-width: $tablet) {
     @content;
   }
 }

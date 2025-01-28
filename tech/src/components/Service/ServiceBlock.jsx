@@ -4,7 +4,7 @@ import { serviceBlocks } from "components/Data";
 
 export default function ServiceContent() {
   return (
-    <section className="service">
+    <section className="service" id="service">
       <div className="container">
         <h5>Our Services</h5>
         <h2>What We Do</h2>

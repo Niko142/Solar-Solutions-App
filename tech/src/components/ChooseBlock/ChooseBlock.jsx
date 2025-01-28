@@ -3,7 +3,7 @@ import { choosing } from "../Data";
 
 export default function ChooseBlock() {
   return (
-    <section className="choose">
+    <section className="choose" id="choose">
       <div className="container">
         <div className="choose__list">
           <article className="choose__start">

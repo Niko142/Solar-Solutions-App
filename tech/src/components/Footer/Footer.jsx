@@ -38,19 +38,19 @@ export default function Footer() {
                 <a href="#header">Home</a>
               </li>
               <li>
-                <a href="/#">About us</a>
+                <a href="#experience">About us</a>
               </li>
               <li>
-                <a href="/#">Solar Initiatives</a>
+                <a href="#choose">Solar Initiatives</a>
               </li>
               <li>
-                <a href="/#">Our Services</a>
+                <a href="#service">Our Services</a>
               </li>
               <li>
-                <a href="/#">Community</a>
+                <a href="#contact">Community</a>
               </li>
               <li>
-                <a href="/#">Aesthetics</a>
+                <a href="#solution">Aesthetics</a>
               </li>
             </ul>
           </article>
@@ -82,16 +82,10 @@ export default function Footer() {
               </li>
               <li>
                 <div className="footer__links">
-                  <a
-                    className="footer-facebook"
-                    href="https://facebook.com"
-                  >
+                  <a className="footer-facebook" href="https://facebook.com">
                     <img src={Facebook} alt="Facebook" />
                   </a>
-                  <a
-                    className="footer-twitter"
-                    href="https://x.com"
-                  >
+                  <a className="footer-twitter" href="https://x.com">
                     <img src={Twitter} alt="Twitter" />
                   </a>
                   <a className="footer-instagram" href="https://instagram.com">

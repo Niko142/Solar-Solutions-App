@@ -113,12 +113,12 @@
           height: 25px;
         }
         & .footer-twitter {
-            width: 26px;
-            height: 20px;
+          width: 26px;
+          height: 20px;
         }
         & .footer-facebook {
-            width: 24px;
-            height: 24px;
+          width: 24px;
+          height: 24px;
         }
       }
     }
@@ -133,5 +133,91 @@
       font-size: 16px;
       line-height: 150%;
     }
+  }
+
+  @include f.footerMax() {
+    & .container {
+      padding-inline: 80px;
+    }
+
+    &__head p {
+      max-width: none;
+    }
+  }
+
+  @include f.footerLaptop() {
+    &__main {
+      & article.footer__block {
+        padding: 40px;
+      }
+
+      & article.footer-contacts {
+        flex: 0;
+      }
+
+      & .container {
+        justify-content: center;
+      }
+    }
+  }
+
+  @include f.footerLp() {
+    & .container {
+      padding-inline: 40px;
+    }
+    
+    & article.footer-logo {
+        flex: 1;
+    }
+  }
+
+  @include f.footerTablet() {
+    & article.footer-logo {
+      & p {
+        text-align: justify;
+      }
+    }
+
+    &__main {
+        & article.footer__block {
+          padding: 20px;
+        }
+    }
+  }
+
+  @include f.footerTablets() {
+    & .container {
+      padding-inline: 20px;
+    }
+
+    &__main .container {
+      display: grid;
+      grid-template-columns: 1fr .5fr;
+      gap: 15px;
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    &__head {
+      & p {font-size: 17px;}
+    }
+    &__main .container {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+
+    article.footer__block{
+      h6 {
+        margin-top: 0;
+      }
+      &:not(:last-child) {
+        border-right: 0;
+      }
+    }
+
+    &__floor {
+      padding-inline: 7px;
+    }
+
   }
 }
