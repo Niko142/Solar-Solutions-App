@@ -1,9 +1,6 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
-import {
-  navItemsVariants,
-  navMobileVariants,
-} from "@/shared/data/animateVariants";
+import { navItemsVariants, navMobileVariants } from "@/shared/animations";
 import type { HeaderMobileNavProps } from "@/shared/types/navigation.types";
 
 export const HeaderMobileNav = ({
@@ -18,7 +15,7 @@ export const HeaderMobileNav = ({
     animate="open"
     exit="close"
     transition={{ duration: 0.4 }}
-    className="absolute top-0 right-0 bg-black px-3 pt-25 pb-2 text-white sm:px-6 sm:pt-27 sm:pb-5 md:pt-30 lg:hidden"
+    className="absolute top-0 right-0 z-20 bg-black px-3 pt-25 pb-2 text-white sm:px-6 sm:pt-27 sm:pb-5 md:pt-30 lg:hidden"
   >
     <ul className="flex flex-col gap-3 sm:gap-4">
       {items.map((item, ind) => (

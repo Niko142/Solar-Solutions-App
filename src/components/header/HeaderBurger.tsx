@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import { navBtnVariants } from "@/shared/data/animateVariants";
+import { navBtnVariants } from "@/shared/animations";
 import type { HeaderBurgerProps } from "@/shared/types/navigation.types";
 
 export const HeaderBurger = ({ isOpen, onClick }: HeaderBurgerProps) => {

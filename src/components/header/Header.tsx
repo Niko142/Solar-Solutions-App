@@ -17,7 +17,7 @@ export const Header = () => {
   useClickOutside(navbarRef, () => setIsOpen(false));
 
   return (
-    <header className="relative w-full bg-black py-5 sm:py-6 md:py-7.5">
+    <header className="fixed top-0 right-0 left-0 z-20 w-full bg-black py-5 sm:py-6 md:py-7.5">
       <div className="flex items-center justify-between px-8 sm:px-10 md:px-13 xl:ps-21.5 xl:pe-20">
         {/* Logo */}
         <div className="relative aspect-148/63 w-[100px] sm:w-[120px] md:w-[148px]">

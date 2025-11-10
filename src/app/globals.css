@@ -19,6 +19,10 @@
   }
 }
 
+@theme {
+  --color-red: #ee0000;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -33,6 +37,15 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-h1 {
+:where(h1, h2, h3, h4, h5) {
   font-weight: 700;
+}
+
+h1 {
+  font-size: clamp(32px, 5vw, 70px);
+  line-height: 1.085;
+}
+
+h2 {
+  font-size: clamp(26px, 4vw, 50px);
 }

@@ -9,7 +9,7 @@ export const HeaderNav = ({ items }: { items: NavigationItemsProps[] }) => {
         {items.map((item, ind) => (
           <li
             key={ind}
-            className="font-poppins cursor-pointer text-base leading-6 font-medium text-white uppercase transition-colors duration-200 hover:text-red-500 xl:text-lg xl:leading-[27px]"
+            className="font-poppins cursor-pointer text-base/6 font-medium text-white uppercase transition-colors duration-200 hover:text-red-500 xl:text-lg/[27px]"
           >
             <Link href={item.href}>{item.title}</Link>
           </li>
