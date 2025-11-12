@@ -20,7 +20,17 @@
 }
 
 @theme {
+  --color-white-100: #ffffffb8;
   --color-red: #ee0000;
+  --color-dark: #131313;
+  --color-gray-50: #f4f4f4;
+  --color-gray-100: #f3f3f3;
+  --color-gray-400: #787878;
+  --color-gray-500: #5c5c5c;
+  --color-gray-600: #464646;
+  --color-gray-700: #3e3e3e;
+
+  --radius-5xl: 40px;
 }
 
 html {
@@ -41,11 +51,15 @@ body {
   font-weight: 700;
 }
 
+img {
+  user-select: none;
+}
+
 h1 {
   font-size: clamp(32px, 5vw, 70px);
   line-height: 1.085;
 }
 
 h2 {
-  font-size: clamp(26px, 4vw, 50px);
+  font-size: clamp(28px, 6vw, 50px);
 }
