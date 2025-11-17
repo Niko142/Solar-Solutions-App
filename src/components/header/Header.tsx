@@ -25,7 +25,7 @@ export const Header = () => {
             src="/logo.svg"
             alt="Logo"
             fill
-            loading="eager"
+            priority
             className="object-contain"
             sizes="(max-width: 640px) 100px, (max-width: 768px) 120px, 148px"
           />
