@@ -3,26 +3,27 @@ import type { NavigationItemsProps } from "../types/navigation.types";
 export const navigationItems: NavigationItemsProps[] = [
   {
     title: "Home",
-    href: "/",
+    href: "#home",
   },
   {
     title: "About Us",
-    href: "#experience",
+    href: "#about",
   },
   {
     title: "Solar Initiatives",
-    href: "#choose",
+    href: "#initiatives",
   },
   {
     title: "Our Services",
-    href: "#service",
+    href: "#services",
   },
   {
     title: "Community",
-    href: "#contact",
+    href: "#about",
   },
+  // Пока отсутствует
   {
     title: "Aesthetics",
-    href: "#solution",
+    href: "#aesthetics",
   },
 ];

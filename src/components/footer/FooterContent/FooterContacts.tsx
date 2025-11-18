@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { contactData } from "@/shared/data/footer";
+import Link from "next/link";
 
 export const FooterContacts = () => {
   const contacts = contactData.filter((d) => d.content);
@@ -15,7 +16,7 @@ export const FooterContacts = () => {
         <ul className="mb-5.5 flex flex-col items-center gap-5 md:items-baseline">
           {contacts.map((item, ind) => (
             <li key={ind}>
-              <a
+              <Link
                 href={item.href}
                 className="flex items-center gap-2 text-base/[19px] font-light md:gap-4.5"
               >
@@ -27,7 +28,7 @@ export const FooterContacts = () => {
                   className="aspect-square"
                 />
                 {item.content}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -35,7 +36,7 @@ export const FooterContacts = () => {
         <ul className="flex flex-wrap justify-center gap-3 md:justify-start">
           {socials.map((item, ind) => (
             <li key={ind}>
-              <a href={item.href}>
+              <Link href={item.href} target="_blank">
                 <Image
                   src={item.icon}
                   alt={item.alt}
@@ -43,7 +44,7 @@ export const FooterContacts = () => {
                   height={24}
                   className="aspect-square"
                 />
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

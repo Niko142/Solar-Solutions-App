@@ -5,7 +5,7 @@ import { SolutionCard } from "./SolutionCard";
 
 export const IntroSection = () => {
   return (
-    <section className="pt-8.5 pb-28.5">
+    <section className="pt-8.5 pb-28.5" id="home">
       <LayoutContainer>
         <div className="relative mb-10 sm:mb-18 md:mx-10 md:mb-20 lg:mx-19 lg:mb-29.5">
           <Image

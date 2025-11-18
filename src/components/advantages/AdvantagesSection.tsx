@@ -6,10 +6,13 @@ export const AdvantagesSection = () => {
   return (
     <section
       className="bg-gray-50 py-10 sm:py-12 md:py-17 lg:py-27.5"
-      id="choose"
+      id="initiatives"
     >
       <LayoutContainer>
-        <div className="grid grid-cols-1 gap-5 px-6 sm:px-11 md:grid-cols-2 md:px-15 lg:grid-cols-3 lg:px-20 xl:gap-7.5 xl:px-37.5">
+        <div
+          className="grid grid-cols-1 gap-5 px-6 sm:px-11 md:grid-cols-2 md:px-15 lg:grid-cols-3 lg:px-20 xl:gap-7.5 xl:px-37.5"
+          id="initiatives"
+        >
           {/* Notation */}
           <div className="pt-0 md:pt-5 lg:pt-10">
             <h2 className="font-poppins text-dark mb-[13px] ml-0.5 leading-tight md:leading-snug xl:leading-[67px]">

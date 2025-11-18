@@ -4,7 +4,10 @@ import { OfferingList } from "./OfferingList";
 
 export const OfferingsSection = () => {
   return (
-    <section className="py-10 md:pt-17.5 md:pb-12.5 lg:pt-24 lg:pb-[101px]">
+    <section
+      className="py-10 md:pt-17.5 md:pb-12.5 lg:pt-24 lg:pb-[101px]"
+      id="services"
+    >
       <LayoutContainer>
         <div className="px-6 sm:px-11 md:px-15 lg:px-20 xl:px-37.5">
           {/* Header block */}

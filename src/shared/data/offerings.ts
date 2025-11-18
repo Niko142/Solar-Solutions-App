@@ -8,6 +8,7 @@ export const offeringItems: OfferingItemsProps[] = [
     title: "Solar Solutions",
     description:
       "Harness the power of the sun and embrace clean, renewable energy with our solar solutions.",
+    href: "/offerings/solar-solutions",
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ export const offeringItems: OfferingItemsProps[] = [
     title: "Deals and Promotions",
     description:
       "We pride ourselves on securing great deals and promotions for our customers.",
+    href: "/offerings/deals-and-promotions",
   },
   {
     id: 3,
@@ -24,6 +26,7 @@ export const offeringItems: OfferingItemsProps[] = [
     title: "Cable Services",
     description:
       "Stay connected with high-quality cable services that deliver reliable and fast internet, television.",
+    href: "/offerings/cable-services",
   },
   {
     id: 4,
@@ -32,5 +35,6 @@ export const offeringItems: OfferingItemsProps[] = [
     title: "Consultation and Support",
     description:
       "We understand that navigating the solar and cable landscape can be overwhelming.",
+    href: "/offerings/consultation-and-support",
   },
 ];

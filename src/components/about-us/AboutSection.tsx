@@ -3,7 +3,10 @@ import { LayoutContainer } from "@/shared/components";
 
 export const AboutSection = () => {
   return (
-    <section className="bg-red py-7 sm:py-10 md:pt-[45px] md:pb-[69px]">
+    <section
+      className="bg-red py-7 sm:py-10 md:pt-[45px] md:pb-[69px]"
+      id="about"
+    >
       <LayoutContainer>
         <div className="relative flex flex-col-reverse justify-between gap-x-[67px] px-6 sm:px-11 md:px-15 lg:flex-row lg:px-20 xl:gap-7.5 xl:px-37.5">
           {/* Content Block */}

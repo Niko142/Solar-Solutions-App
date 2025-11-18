@@ -9,7 +9,7 @@ export const FooterServices = () => {
         {offeringItems.map((item) => (
           <li key={item.id}>
             <Link
-              href={"/#"}
+              href={item.href}
               className="hover:text-red transition-colors duration-300 ease-in-out"
             >
               {item.title}

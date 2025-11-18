@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Poppins, Roboto } from "next/font/google";
-import { Header } from "@/components/header";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -30,10 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${poppins.variable} ${roboto.variable}`}>
-      <body className="bg-black pt-20.5 sm:pt-[99px] md:pt-[123px]">
-        <Header />
-        {children}
-      </body>
+      <body className="bg-black">{children}</body>
     </html>
   );
 }
