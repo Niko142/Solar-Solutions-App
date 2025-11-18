@@ -1,9 +1,4 @@
-export interface ContactDataProps {
-  icon: string;
-  alt: string;
-  content?: string;
-  href: string;
-}
+import type { ContactDataProps } from "../types/navigation.types";
 
 export const contactData: ContactDataProps[] = [
   {
