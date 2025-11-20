@@ -1,44 +1,93 @@
-# Лендинг сайта на основе React
+# :sunny: Solar-Solutions - лендинг для компании по продаже солнечных батарей
 
-## Описание
+![Скриншот лендинга](./public/screenshot.png)
 
-Проект представляет собой реализацию сайта, связанный с продажей солнечных батарей и аналогичных приспособлений.
+## :book: Описание
 
-## Как использовать
+Проект представляет собой лендинг для компании, занимающейся продажей и установкой солнечных батарей и сопутствующего оборудования.
 
-Если необходимо протестировать и/или использовать проект локально, необходимо:
+## :hammer_and_wrench: Стек технологий
 
-```bash
-# устанавливаем зависимости
-nmp install
+- Next.js
+- React
+- TypeScript
+- Tailwind
+- Bun - основной пакетный менеджер
 
-# переходим в необходимую директорию
-cd tech
+## :rocket: Установка и запуск
 
-# запускаем проект
-npm run start
+1. Клонировать репозиторий:
+
+   ```bash
+   git clone https://github.com/Niko142/Solar-Solutions-App.git
+   ```
+
+   Переходим в нужную папку:
+
+   ```bash
+   cd Solar-Solutions-App
+   ```
+
+2. Установить зависимости:
+
+   ```bash
+   bun install
+   ```
+
+3. Запустить dev-сборку (опционально):
+
+   ```bash
+   bun run dev
+   ```
+
+4. Сборка для production:
+
+   ```bash
+   # Сборка production-версии проекта
+   bun run build
+   # Запуск production-сборки
+   bun run start
+   ```
+
+## :white_check_mark: Особенности проекта
+
+- **Компонентный подход:** Разбиение интерфейса на модульные компоненты;
+- **Анимации:** Плавные интерактивные анимации, реализованные с помощью библиотеки `framer-motion`, обеспечивающие необходимый UI/UX эффект;
+- **Адаптивный дизайн:** Корректное отображение на всех типах устройств;
+- **Статическая генерация:** Использование возможностей Next.js для оптимизированной сборки и более комфортной маршрутизации.
+
+## :file_folder: Структура
+
+```text
+Solar-Solutions-App
+├── README.md
+├── src
+│   ├── app
+│   │   ├── (main)
+│   │   ├── (route)
+│   │   ├── favicon.ico
+│   │   ├── globals.css
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   ├── components
+│   │   ├── about-us
+│   │   ├── advantages
+│   │   ├── footer
+│   │   ├── header
+│   │   ├── intro
+│   │   └── offerings
+│   ├── hooks
+│   │   └── useClickOutside.ts
+│   └── shared
+│       ├── animations
+│       ├── button
+│       ├── components
+│       ├── data
+│       └── types
 ```
 
-## Демо
+## :link: Ссылки
 
-[Посмотреть из github pages](https://niko142.github.io/Solar-Solutions-App/)
+[Демо-версия](https://niko142.github.io/Solar-Solutions-App/)
 
-Также есть макет, по которому сайт сверстан:
-
-[Макет](https://www.figma.com/design/IM6Mm8u7VNCWlduJIjiWtY/website-design---solar-solution---corporate-(Community)?node-id=0-1&t=0s9AeR5hC2aiXlPh-1)
-
-## Используемые технологии
-
-* React
-* JS
-* Sass
-
-## Краткая характеристика
-
-* Разбиение на модульную архитектуру
-* Pixel-perfect верстка
-* Применение resizeObserver в целях адаптивности некоторого блока
-* Добавление анимаций
-* navbar без сторонних библиотек
-* Все классы и наименования соблюдены в рамках БЭМ методологии
-
+[Макет в Figma](<https://www.figma.com/design/IM6Mm8u7VNCWlduJIjiWtY/website-design---solar-solution---corporate-(Community)?node-id=0-1&t=0s9AeR5hC2aiXlPh-1>)
