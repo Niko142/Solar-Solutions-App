@@ -1,18 +1,15 @@
-import { FooterHead } from "./FooterHead";
-import { FooterRights } from "./FooterRights";
-import { FooterMainContent } from "./FooterMainContent";
+import { FooterCopyright } from "./FooterCopyright";
+import { FooterHeader } from "./FooterHeader";
+import { FooterMain } from "./FooterMain";
 
 export const Footer = () => {
   return (
     <footer className="font-roboto bg-black text-white">
-      {/* Head */}
-      <FooterHead />
+      <FooterHeader />
       <hr className="bg-white opacity-20" />
-      {/* Main info */}
-      <FooterMainContent />
+      <FooterMain />
       <hr className="bg-white opacity-20" />
-      {/* Rights */}
-      <FooterRights />
+      <FooterCopyright />
     </footer>
   );
 };

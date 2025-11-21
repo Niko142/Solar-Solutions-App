@@ -1,91 +1,97 @@
-import { ArrowLeft, ChartBar, MessageCircle } from "lucide-react";
-import Link from "next/link";
+import {
+  ChartBar,
+  Clock,
+  Mail,
+  MessageCircle,
+  Phone,
+  Wrench,
+} from "lucide-react";
+import { ReturnButton } from "@/components/ui";
+import { PageHeader, PageLayout } from "@/components/layout";
 
 export default function ConsultationSupport() {
   return (
-    <main className="font-roboto min-h-screen bg-green-100/30 py-8 md:py-12">
-      <div className="container mx-auto max-w-4xl px-2 sm:px-4">
-        <div className="font-poppins mb-4 flex flex-col items-center gap-2 sm:mb-6 md:mb-8 md:gap-4">
-          <h1 className="leading-tight">Consultation & Support</h1>
-          <p className="text-xl text-gray-600">
-            We&apos;re here to help you every step of the way
-          </p>
-        </div>
+    <PageLayout bg="bg-green-100/30">
+      <PageHeader
+        title="Consultation & support"
+        description=" We're here to help you every step of the way"
+      />
 
-        <div className="mb-8 rounded-2xl bg-white p-8 shadow-lg">
-          <div className="grid gap-8 md:grid-cols-2">
-            <div>
-              <h2 className="mb-6 text-2xl font-semibold text-gray-800">
-                Get Expert Advice
-              </h2>
-              <div className="space-y-4">
-                <div className="flex items-start">
-                  <div className="mr-4 rounded-lg bg-green-100 p-3">
-                    <MessageCircle size={28} />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-semibold">Free Consultation</h3>
-                    <p className="text-gray-600">
-                      30-minute free session to understand your needs
-                    </p>
-                  </div>
+      <div className="mb-4 rounded-xl bg-white px-4 py-7 shadow-lg sm:mb-6 sm:p-8 md:mb-8">
+        <div className="grid gap-4 sm:gap-8 md:grid-cols-2">
+          <div>
+            <h2 className="service font-poppins mb-4 leading-tight font-semibold">
+              Get Expert Advice
+            </h2>
+            <ul className="space-y-4">
+              <li className="flex items-start gap-4">
+                <span className="rounded-lg bg-green-100 p-3">
+                  <MessageCircle size={28} className="text-green-700" />
+                </span>
+                <div>
+                  <h3 className="mb-1 text-lg/tight font-semibold">
+                    Free Consultation
+                  </h3>
+                  <p className="text-gray-600">
+                    30-minute free session to understand your needs
+                  </p>
                 </div>
-                <div className="flex items-start">
-                  <div className="mr-4 rounded-lg bg-blue-100 p-3">
-                    <ChartBar size={28} />
-                    {/* <span className="text-2xl">📊</span> */}
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-semibold">Custom Solutions</h3>
-                    <p className="text-gray-600">
-                      Tailored recommendations for your specific situation
-                    </p>
-                  </div>
+              </li>
+              <li className="flex items-start gap-4">
+                <span className="rounded-lg bg-blue-100 p-3">
+                  <ChartBar size={28} className="text-blue-700" />
+                </span>
+                <div>
+                  <h3 className="mb-1 text-lg/tight font-semibold">
+                    Custom Solutions
+                  </h3>
+                  <p className="text-gray-600">
+                    Tailored recommendations for your specific situation
+                  </p>
                 </div>
-                <div className="flex items-start">
-                  <div className="mr-4 rounded-lg bg-purple-100 p-3">
-                    {/* <Hamm */}
-                    {/* <span className="text-2xl">🛠️</span> */}
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-semibold">Ongoing Support</h3>
-                    <p className="text-gray-600">
-                      24/7 customer support and maintenance
-                    </p>
-                  </div>
+              </li>
+              <li className="flex items-start gap-4">
+                <span className="rounded-lg bg-purple-100 p-3">
+                  <Wrench size={28} className="text-purple-700" />
+                </span>
+                <div>
+                  <h3 className="mb-1 text-lg/tight font-semibold">
+                    Ongoing Support
+                  </h3>
+                  <p className="text-gray-600">
+                    24/7 customer support and maintenance
+                  </p>
                 </div>
-              </div>
-            </div>
+              </li>
+            </ul>
+          </div>
 
-            <div className="rounded-xl bg-gray-50 p-6">
-              <h3 className="mb-4 text-xl font-semibold">
-                Contact Our Experts
-              </h3>
-              <div className="space-y-3">
-                <div className="flex items-center text-gray-600">
-                  <span className="mr-3">📞</span>
-                  <span>1-800-HELP-NOW</span>
-                </div>
-                <div className="flex items-center text-gray-600">
-                  <span className="mr-3">✉️</span>
-                  <span>support@company.com</span>
-                </div>
-                <div className="flex items-center text-gray-600">
-                  <span className="mr-3">🕒</span>
-                  <span>Available 24/7</span>
-                </div>
-              </div>
-            </div>
+          <div className="rounded-xl bg-gray-100 p-6">
+            <h3 className="mb-4 text-xl font-semibold">Contact Our Experts</h3>
+            <ul className="font-poppins space-y-4 font-medium">
+              <li className="flex items-center gap-3 text-gray-600">
+                <Phone />
+                <span>123456789</span>
+              </li>
+              <li className="flex items-center gap-3 text-gray-600">
+                <Mail />
+                <span>support@company.com</span>
+              </li>
+              <li className="flex items-center gap-3 text-gray-600">
+                <Clock />
+                <span>Available 24/7</span>
+              </li>
+            </ul>
           </div>
         </div>
-
-        <Link
-          href="/#services"
-          className="font-poppins inline-flex items-center gap-2 rounded-lg bg-green-400 px-6 py-3 font-medium text-black shadow-md outline-0 transition-colors hover:bg-green-500 focus-visible:bg-green-500"
-        >
-          <ArrowLeft size={24} /> Return
-        </Link>
       </div>
-    </main>
+
+      <ReturnButton
+        path={"/#services"}
+        color="bg-green-600"
+        hover="hover:bg-green-700"
+        focusVisible="focus-visible:bg-green-700"
+      />
+    </PageLayout>
   );
 }

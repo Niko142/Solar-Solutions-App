@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
-import type { NavigationItemsProps } from "@/shared/types/navigation.types";
+import type { NavigationItemsProps } from "@/types/navigation.types";
 
 export const HeaderNav = ({ items }: { items: NavigationItemsProps[] }) => {
   return (

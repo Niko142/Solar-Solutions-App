@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { navItemsVariants, navMobileVariants } from "@/shared/animations";
-import type { HeaderMobileNavProps } from "@/shared/types/navigation.types";
+import { navItemsVariants, navMobileVariants } from "@/constants/animations";
+import type { HeaderMobileNavProps } from "@/types/navigation.types";
 
 export const HeaderMobileNav = ({
   items,
