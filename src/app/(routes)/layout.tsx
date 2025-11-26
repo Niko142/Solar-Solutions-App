@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { BaseLayoutProps } from "@/types/common.types";
 
 export const metadata: Metadata = {
   title: "Solar Solutions | Energy & Connectivity Services",
@@ -8,11 +9,9 @@ export const metadata: Metadata = {
 
 export default function OfferingsLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<BaseLayoutProps>) {
   return (
-    <div className="">
+    <div>
       <main>{children}</main>
     </div>
   );
