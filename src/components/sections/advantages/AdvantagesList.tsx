@@ -1,11 +1,11 @@
 import { AdvantageCard } from "./AdvantageCard";
-import type { AdvantageCardProps } from "./advantages.types";
+import type { AdvantagesListProps } from "./advantages.types";
 
-export const AdvantagesList = ({ cards }: { cards: AdvantageCardProps[] }) => {
+export const AdvantagesList = ({ cards }: AdvantagesListProps) => {
   return (
     <>
-      {cards.map((item, ind) => (
-        <AdvantageCard key={ind} {...item} />
+      {cards.map((card) => (
+        <AdvantageCard key={card.id} advantage={card} />
       ))}
     </>
   );

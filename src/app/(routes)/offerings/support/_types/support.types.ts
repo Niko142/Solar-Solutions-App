@@ -1,9 +1,9 @@
 import type { LucideIcon } from "lucide-react";
+import type { IconBadgeTheme } from "@/types/theme.types";
 
 export interface SupportOpportunitiesProps {
   icon: LucideIcon;
-  bgColor: "bg-green-100" | "bg-blue-100" | "bg-purple-100";
-  iconColor: "text-green-700" | "text-blue-700" | "text-purple-700";
+  variant: IconBadgeTheme;
   title: string;
   description: string;
 }

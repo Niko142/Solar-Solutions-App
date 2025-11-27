@@ -7,9 +7,11 @@ export interface SolutionItemsProps {
   alt: ImageProps["alt"];
 }
 
-export type SolutionCardProps = SolutionItemsProps;
+export type SolutionCardProps = {
+  card: SolutionItemsProps;
+};
 
 export interface SolutionListProps {
   title: string;
-  cards: SolutionCardProps[];
+  items: SolutionItemsProps[];
 }

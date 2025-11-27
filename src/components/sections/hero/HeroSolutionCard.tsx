@@ -1,17 +1,12 @@
 import Image from "next/image";
 import type { SolutionCardProps } from "./hero.types";
 
-export const HeroSolutionCard = ({
-  src,
-  alt,
-  title,
-  description,
-}: SolutionCardProps) => {
+export const HeroSolutionCard = ({ card }: SolutionCardProps) => {
   return (
     <article className="relative h-90 w-80 overflow-hidden rounded-[10px] text-white sm:h-108 sm:w-65.5">
       <Image
-        src={src}
-        alt={alt}
+        src={card.src}
+        alt={card.alt}
         fill
         className="object-cover"
         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -28,8 +23,10 @@ export const HeroSolutionCard = ({
 
       {/* Content */}
       <div className="relative px-5 py-8">
-        <h3 className="z-10 mb-4 text-2xl/[31px]">{title}</h3>
-        <p className="font-roboto font-regular text-base/5.5">{description}</p>
+        <h3 className="z-10 mb-4 text-2xl/[31px]">{card.title}</h3>
+        <p className="font-roboto font-regular text-base/5.5">
+          {card.description}
+        </p>
       </div>
     </article>
   );

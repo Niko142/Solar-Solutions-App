@@ -19,6 +19,7 @@ export const OfferingsSection = () => {
               What we do
             </h2>
           </div>
+
           {/* Main List */}
           <OfferingList items={offeringItems} />
         </div>

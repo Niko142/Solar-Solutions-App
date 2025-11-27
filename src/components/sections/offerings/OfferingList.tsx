@@ -1,12 +1,12 @@
 import Image from "next/image";
 import { OfferingCard } from "./OfferingCard";
-import type { OfferingCardProps } from "@/types/offerings.types";
+import type { OfferingListProps } from "@/types/offerings.types";
 
-export const OfferingList = ({ items }: { items: OfferingCardProps[] }) => {
+export const OfferingList = ({ items }: OfferingListProps) => {
   return (
     <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3 lg:gap-x-8.5 lg:gap-y-7.5">
-      {items.map((item: OfferingCardProps) => (
-        <OfferingCard key={item.id} {...item} />
+      {items.map((item) => (
+        <OfferingCard key={item.id} card={item} />
       ))}
       <Image
         src="/present-panel.webp"

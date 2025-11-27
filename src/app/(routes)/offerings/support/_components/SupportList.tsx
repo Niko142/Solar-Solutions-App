@@ -1,4 +1,4 @@
-import clsx from "clsx";
+import { IconBadge } from "@/components/ui/Badge/IconBadge";
 import type { SupportListProps } from "../_types/support.types";
 
 export const SupportList = ({ title, opportunities }: SupportListProps) => {
@@ -8,9 +8,7 @@ export const SupportList = ({ title, opportunities }: SupportListProps) => {
       <ul className="space-y-4">
         {opportunities.map((item, ind) => (
           <li key={ind} className="flex items-start gap-4">
-            <span className={clsx("rounded-lg p-3", item.bgColor)}>
-              <item.icon size={28} className={`${item.iconColor}`} />
-            </span>
+            <IconBadge size="md" icon={item.icon} variant={item.variant} />
             <div>
               <h3 className="mb-1 text-lg/tight font-semibold">{item.title}</h3>
               <p className="text-gray-600">{item.description}</p>

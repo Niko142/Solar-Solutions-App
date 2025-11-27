@@ -4,4 +4,10 @@ export interface AdvantagesItemsProps {
   description: string;
 }
 
-export type AdvantageCardProps = AdvantagesItemsProps;
+export type AdvantageCardProps = {
+  advantage: AdvantagesItemsProps;
+};
+
+export type AdvantagesListProps = {
+  cards: AdvantagesItemsProps[];
+};

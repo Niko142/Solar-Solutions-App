@@ -1,16 +1,28 @@
 import type { LinkProps } from "next/link";
-import type { ThemeVariants } from "@/types/common.types";
+import type {
+  PrimaryButtonTheme,
+  ReturnButtonTheme,
+} from "@/types/theme.types";
 
-export interface ButtonProps {
+export interface PrimaryButtonProps {
   children: React.ReactNode;
-  variant?: ThemeVariants;
+  variant?: PrimaryButtonTheme;
   className?: string;
 }
 
 export interface ReturnButtonProps {
   path: LinkProps["href"];
-  color: string;
-  hover?: string;
-  focusVisible?: string;
+  variant: ReturnButtonTheme;
   description?: string;
 }
+
+export type PrimaryButtonVariant = {
+  base: string;
+  hover: string;
+};
+
+export type ReturnButtonVariant = {
+  base: string;
+  hover: string;
+  focus: string;
+};

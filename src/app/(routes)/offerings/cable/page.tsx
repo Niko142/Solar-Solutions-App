@@ -18,12 +18,7 @@ export default function CableServices() {
         <CablePackagesList packages={cablePackages} />
       </div>
 
-      <ReturnButton
-        path={"/#services"}
-        color="bg-violet-600"
-        hover="hover:bg-violet-800"
-        focusVisible="focus-visible:bg-violet-800"
-      />
+      <ReturnButton path={"/#services"} variant="violet" />
     </PageLayout>
   );
 }

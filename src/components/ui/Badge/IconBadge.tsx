@@ -1,15 +1,24 @@
-// import type { LucideIcon } from "lucide-react";
+import clsx from "clsx";
+import type { IconBadgeProps } from "./badge.types";
+import { iconBadgeVariants, sizeIconVariants } from "./badge.variants";
 
-// interface IconBadgeProps {
-//   icon: LucideIcon;
-//   size: "sm" | "md";
-//   variant: "";
-// }
-
-// export const IconBadge = ({ icon: Icon, size = 28 }) => {
-//   return (
-//     <span className="rounded-lg bg-purple-100 p-3">
-//       <Icon size={size} className="text-purple-700" />
-//     </span>
-//   );
-// };
+export const IconBadge = ({
+  icon: Icon,
+  size = "md",
+  variant,
+  className = "",
+}: IconBadgeProps) => {
+  const colorConfig = iconBadgeVariants[variant];
+  const sizesConfig = sizeIconVariants[size];
+  return (
+    <span
+      className={clsx(
+        sizesConfig.container,
+        colorConfig.backgroundColor,
+        className,
+      )}
+    >
+      <Icon size={sizesConfig.size} className={clsx(colorConfig.color)} />
+    </span>
+  );
+};

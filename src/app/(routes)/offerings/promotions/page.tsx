@@ -18,12 +18,7 @@ export default function DealsPromotions() {
         ))}
       </div>
 
-      <ReturnButton
-        path={"/#services"}
-        color="bg-red-600"
-        hover="hover:bg-red-700"
-        focusVisible="focus-visible:bg-red-700"
-      />
+      <ReturnButton path={"/#services"} variant="red" />
     </PageLayout>
   );
 }

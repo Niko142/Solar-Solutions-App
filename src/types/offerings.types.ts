@@ -5,9 +5,15 @@ export interface OfferingItemsProps {
   id: number | string;
   src: ImageProps["src"];
   alt: ImageProps["alt"];
+  href: LinkProps["href"];
   title: string;
   description: string;
-  href: LinkProps["href"];
 }
 
-export type OfferingCardProps = OfferingItemsProps;
+export type OfferingCardProps = {
+  card: OfferingItemsProps;
+};
+
+export interface OfferingListProps {
+  items: OfferingItemsProps[];
+}

@@ -23,12 +23,7 @@ export default function ConsultationSupport() {
         </div>
       </div>
 
-      <ReturnButton
-        path={"/#services"}
-        color="bg-green-600"
-        hover="hover:bg-green-700"
-        focusVisible="focus-visible:bg-green-700"
-      />
+      <ReturnButton path={"/#services"} variant="green" />
     </PageLayout>
   );
 }

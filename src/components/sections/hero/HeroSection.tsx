@@ -24,7 +24,7 @@ export const HeroSection = () => {
 
         <HeroSolutionList
           title="Our Expertise and Experience"
-          cards={solutionItems}
+          items={solutionItems}
         />
       </LayoutContainer>
     </section>

@@ -24,12 +24,7 @@ export default function SolarSolutions() {
         </div>
       </div>
 
-      <ReturnButton
-        path={"/#services"}
-        color="bg-blue-600"
-        hover="hover:bg-blue-700"
-        focusVisible="focus-visible:bg-blue-700"
-      />
+      <ReturnButton path={"/#services"} variant="blue" />
     </PageLayout>
   );
 }
