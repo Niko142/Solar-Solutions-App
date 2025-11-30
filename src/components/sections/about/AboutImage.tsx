@@ -9,6 +9,7 @@ export const AboutImage = () => {
         height={457}
         className="aspect-538/457 w-auto lg:min-w-90"
         alt="Company team"
+        priority
       />
     </div>
   );
